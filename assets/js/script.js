@@ -23,6 +23,13 @@ $(document).ready(function(){
   });
 
 
+  // opne-searchFooter
+  $('.footer-section .buttom-link span').click(function(){
+    $('.footer-form-box').addClass('active-box');
+  });
+  $('.footer-section .footer-form-box form i').click(function(){
+    $('.footer-form-box').removeClass('active-box');
+  });
 
 
 
