@@ -14,6 +14,22 @@ $(document).ready(function(){
     $('.products-section .products-container .products-box').click(function(){
       $(this).toggleClass('active').siblings().removeClass('active');
     });
+    // scroll link
+
+    $('.intro-section .intro-slider .intro-slider-item .scrol-icon').click(function() {
+      $('html, body').animate({
+          scrollTop: $('#' + $(this).data('scroll')).offset().top
+      }, 900);
+  });
+
+
+
+
+
+
+
+
+
 
     // intro-slider
     $('.intro-slider').slick({
