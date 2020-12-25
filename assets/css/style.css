@@ -706,12 +706,15 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   bottom: -67px;
   -webkit-transition: .4s all linear;
   transition: .4s all linear;
-  opacity: 0;
   visibility: hidden;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
 
 .footer-section .footer-form-box.active-box {
   bottom: -13px;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
   visibility: visible;
   opacity: 1;
 }
