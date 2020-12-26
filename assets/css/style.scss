@@ -44,6 +44,9 @@ body {
     }
 }
 
+.overlay-over{
+    overflow-y: hidden;
+}
 .padi-0 {
     padding: 0 0;
 }
@@ -52,13 +55,13 @@ body {
     transition: 0.4s all ease-in-out;
 }
 
-.buttom-style{
+.buttom-style {
     color: rgba($white-color, 1);
     font-size: 10px;
     padding: 3px 10px;
     border: 1px solid rgba($white-color, 1);
     @extend.trans-4;
-    &:hover{
+    &:hover {
         color: rgba($orang-color, 1);
         font-size: 10px;
         padding: 3px 10px;
@@ -67,43 +70,43 @@ body {
     }
 }
 
-.blue-border{
+.blue-border {
     border: 1px solid rgba($blue-color, 1);
-    border-radius: 2px ;
+    border-radius: 2px;
 }
-input{
-    &:focus{
+input {
+    &:focus {
         outline: none;
         box-shadow: unset;
     }
 }
 
-.prag{
+.prag {
     font-size: 14px;
     font-weight: 500;
     color: rgba($gray-color2, 1);
-}   
-.section-title{
+}
+.section-title {
     font-size: 22px;
     color: rgba($blue-color, 1);
     margin: 0 0 20px;
     font-weight: 600;
-} 
+}
 
-.section-content{
+.section-content {
     margin: 0 0 60px;
-  
-    .prag{
+
+    .prag {
         margin: 0 0 15px;
         width: 90%;
     }
-    .buttom-link{
+    .buttom-link {
         text-align: end;
     }
 }
 
-.buttom-link{
-    a{
+.buttom-link {
+    a {
         border-radius: 2px;
         text-align: center;
         font-size: 13px;
@@ -112,7 +115,7 @@ input{
         @extend.trans-4;
         padding: 5px 20px;
         font-weight: 600;
-        &:hover{
+        &:hover {
             border: 2px solid rgba($orang-color, 1);
             color: rgba($orang-color, 1);
         }
@@ -128,8 +131,15 @@ input{
     background-color: rgba($black-color, 0.7);
     position: relative;
     z-index: 2;
+    
     .logo-img {
         margin: 0 40px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-icon{
+        display: none;
     }
     .sochile-box {
         display: flex;
@@ -214,6 +224,9 @@ input{
     }
     .nav-ul {
         padding: 30px 30px 10px;
+        .close-icon{
+            display: none;
+        }
         ul {
             justify-content: flex-end;
             display: flex;
@@ -399,27 +412,26 @@ input{
                 padding: 0 0 80px;
                 text-align: center;
                 display: flex;
-             
+
                 justify-content: center;
-                .front-box{
-                .product-title {
-                    font-size: 16px;
-                    font-weight: 700;
-                    margin: 10px 0;
-                    color: rgba($blue-color2, 1);
-                
+                .front-box {
+                    .product-title {
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin: 10px 0;
+                        color: rgba($blue-color2, 1);
+                    }
                 }
             }
-            }
-            .contentProduct{
+            .contentProduct {
                 display: none;
                 text-align: start;
                 width: 65%;
-                margin: 0 20px ;
+                margin: 0 20px;
                 transition: unset;
                 opacity: 0;
                 @extend.trans-4;
-                .product-subTitle{
+                .product-subTitle {
                     text-overflow: clip;
                     font-size: 20px;
                     color: rgba($white-color, 1);
@@ -427,13 +439,13 @@ input{
                     margin-bottom: 2px;
                     border-bottom: 1px solid rgba($orang-color, 1);
                 }
-                .prag{
+                .prag {
                     line-height: 1.2;
                     color: rgba($white-color, 1);
                     font-size: 14px;
                     margin: 5px 0;
                 }
-                .buttom-style{
+                .buttom-style {
                     float: right;
                     margin: 10px 0;
                 }
@@ -444,13 +456,13 @@ input{
                     max-height: 320px;
                     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 50%, black 100%);
                     box-shadow: 1px 8px 20px 30px rgba(0, 0, 0, 0.3);
-                    .front-box{
+                    .front-box {
                         .product-title {
                             display: none;
                         }
-                        }
+                    }
                 }
-                .contentProduct{
+                .contentProduct {
                     display: block;
                     opacity: 1;
                 }
@@ -463,10 +475,10 @@ input{
 
 // about-section
 
-.about-section{
+.about-section {
     z-index: 1;
     position: relative;
-    &:after{
+    &:after {
         position: absolute;
         content: "";
         top: 0;
@@ -475,62 +487,58 @@ input{
         bottom: 0;
         background-position: center;
         background-size: contain;
-        background-image: url('../img/pattern.png');
-        opacity: .1;
+        background-image: url("../img/pattern.png");
+        opacity: 0.1;
         z-index: -1;
     }
-    .team-group{
-        background-image: url('../img/timeline-Banner.gif');
+    .team-group {
+        background-image: url("../img/timeline-Banner.gif");
         background-position: left center;
         background-repeat: no-repeat;
         background-size: cover;
         padding: 40px 0 402px;
-        .team-img{
+        .team-img {
             margin: 0 0 10px;
         }
-        .team-ditales{
+        .team-ditales {
             width: 64%;
             margin: 0 auto;
-            .section-title{
+            .section-title {
                 margin: 0 0 10px;
             }
-            .date-title{
+            .date-title {
                 font-size: 14px;
                 color: rgba($gray-color3, 1);
                 margin: 0 0 1px;
                 font-weight: 500;
             }
-            .prag{
+            .prag {
                 font-size: 12px;
             }
-            .buttom-link{
+            .buttom-link {
                 text-align: end;
                 margin: 15px 0;
             }
         }
     }
-
-
 }
 
 // about-section
 
-
 // contactus-section
 
-
-.contactus-section{
-    background-image: url('../img/ContactUsBG.png');
+.contactus-section {
+    background-image: url("../img/ContactUsBG.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 20px 60px;
-    .contactus-form{
-        .buttom-link{
+    .contactus-form {
+        .buttom-link {
             text-align: end;
             margin: 20px 0 0;
-            .submit-button{
+            .submit-button {
                 border-radius: 2px;
                 background-color: transparent;
                 text-align: center;
@@ -540,17 +548,18 @@ input{
                 @extend.trans-4;
                 padding: 5px 40px;
                 font-weight: 600;
-                &:hover{
+                &:hover {
                     background-color: rgba($white-color, 1);
                     border-color: rgba($white-color, 1);
                     color: rgba($blue-color, 1);
                 }
             }
         }
-        .form-group{
+        .form-group {
             width: 80%;
- 
-            .input-style,.select-option{
+
+            .input-style,
+            .select-option {
                 width: 100%;
                 border: 0;
                 border-bottom: 1px solid rgba($white-color, 1);
@@ -561,10 +570,10 @@ input{
                 height: 50px;
                 font-size: 14px;
                 padding: 2px 0;
-                &::placeholder{
+                &::placeholder {
                     color: rgba($white-color, 1);
                 }
-                &:focus{
+                &:focus {
                     border-bottom: 1px solid rgba($blue-color, 1);
                     outline: none;
                     box-shadow: unset;
@@ -575,13 +584,12 @@ input{
 }
 // contactus-section
 
-
 // footer-section
 
-.footer-section{
+.footer-section {
     padding: 40px 0;
     background-color: rgba($gray-color, 1);
-    .footer-title{
+    .footer-title {
         font-size: 16px;
         color: rgba($blue-color, 1);
         font-weight: 700;
@@ -590,26 +598,26 @@ input{
         margin: 0 0 20px;
         border-bottom: 1px solid rgba($blue-color, 1);
     }
-    .prag{
+    .prag {
         color: rgba($white-color, 1);
     }
-    ul{
-        li{
+    ul {
+        li {
             margin: 1px 0;
-            a{
+            a {
                 @extend.trans-4;
                 color: rgba($white-color, 1);
                 font-size: 12px;
                 font-weight: 500;
-                &:hover{
+                &:hover {
                     color: rgba($blue-color, 1);
                 }
             }
         }
     }
-    .buttom-link{
+    .buttom-link {
         position: relative;
-        span{
+        span {
             width: 70%;
             background-color: rgba($blue-color, 1);
             color: rgba($white-color, 1);
@@ -621,49 +629,47 @@ input{
             border: 2px solid rgba($blue-color, 1);
             border-radius: 2px;
             font-size: 13px;
-            &:hover{
+            &:hover {
                 background-color: transparent;
                 border-color: rgba($blue-color, 1);
             }
         }
-
-
     }
-    .footer-form-box{
+    .footer-form-box {
         @extend.trans-4;
         position: absolute;
         bottom: -67px;
-        transition: .4s all linear;
+        transition: 0.4s all linear;
         opacity: 0;
         visibility: hidden;
         transform: scaleY(0);
-        &.active-box{
+        &.active-box {
             bottom: -13px;
             transform: scaleY(1);
             visibility: visible;
             opacity: 1;
         }
-        form{
+        form {
             background-color: rgba($gray-color2, 1);
             display: flex;
             align-items: center;
-            button{
+            button {
                 height: 58px;
                 background-color: rgba($blue-color2, 1);
                 color: rgba($white-color, 1);
                 border: 0;
                 width: 80px;
             }
-            input{
+            input {
                 background-color: transparent;
                 color: rgba($white-color, 1);
                 border: 0;
                 padding: 10px;
-                &::placeholder{
+                &::placeholder {
                     color: rgba($white-color, 1);
                 }
             }
-            i{
+            i {
                 font-size: 22px;
                 color: rgba($white-color, 1);
                 padding: 0 20px;
@@ -673,17 +679,16 @@ input{
     }
 }
 
-
 // footer-section
 // sochile-footer
 
-.sochile-footer{
+.sochile-footer {
     padding: 20px 0;
     background-color: rgba($blue-color4, 1);
-    .socialIcon{
+    .socialIcon {
         display: flex;
         justify-content: flex-end;
-        a{
+        a {
             width: 25px;
             height: 25px;
             margin: 0 5px;
@@ -707,4 +712,87 @@ input{
 
 // sochile-footer
 
+@media (max-width: 992px) {
+    .order-md {
+        order: -1;
+    }
 
+
+    .nav-bar-section{
+        .logo-img{
+            margin: 0;
+        }
+        .menu-icon{
+            display: block;
+            i{
+                cursor: pointer;
+                font-size: 30px;
+                color: rgba($white-color, 1);
+                margin: 10px 40px;
+            }
+        }
+        .nav-ul{
+            z-index: 999;
+            background-color: rgba($black-color, 0.7);
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            padding: 50px ;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: .4s all ease-in-out;
+            .close-icon{
+                position: absolute;
+                top: 40px;
+                right: 40px;
+                html[dir="rtl"] &{
+                    right: unset;
+                    left: 40px;
+                }
+                display: block;
+                i{
+                    cursor: pointer;
+                    font-size: 26px;
+                    color: rgba($white-color, 1);
+                    margin: 10px 40px;
+                }
+            }
+            &.open-menuCLass{
+                visibility: visible;
+                opacity: 1;
+            }
+            ul{
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+
+
+    .products-section {
+        .products-container {
+            flex-wrap: wrap;
+            .products-box {
+                height: 300px;
+                flex: 100%;
+            }
+        }
+    }
+
+    .about-section {
+        .c-example__tilt-inner {
+            img {
+                margin: 30px 0;
+                width: 100%;
+            }
+        }
+    }
+    .about-section {
+        .team-group {
+            padding: 40px 0 207px;
+        }
+    }
+}

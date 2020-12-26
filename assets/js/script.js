@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+    // opne-menu
+    $('.nav-bar-section .menu-icon i').click(function(){
+      $('.nav-bar-section .nav-ul').addClass('open-menuCLass');
+      $('body').addClass('overlay-over');
+    });
+    $('.nav-bar-section .nav-ul .close-icon i').click(function(){
+      $('.nav-bar-section .nav-ul').removeClass('open-menuCLass');
+      $('body').removeClass('overlay-over');
+    });
+
+
 
   // opne-searchBar
   $('.open-search-icon i').click(function(){
