@@ -850,6 +850,18 @@ input {
                      }
                     }
 
+                    .products-section{
+                         .products-container{
+                              .products-box{
+                                  &.active{
+                                       .frist-box{
+                                        max-height:unset;
+                                       }
+                                    }
+                                }
+                            }
+                        }
+
                     .contactus-section{
                          .contactus-form{
                               .form-group{
@@ -858,6 +870,7 @@ input {
                             }
                         }
 
+                        
 
 
         }
