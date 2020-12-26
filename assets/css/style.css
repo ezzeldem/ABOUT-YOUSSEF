@@ -932,5 +932,23 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .intro-section .intro-slider .slick-active .intro-slider-item {
+    padding: 0 0 30px;
+  }
+  .intro-section .intro-slider .intro-slider-item {
+    height: 400px;
+  }
+  .intro-section .intro-slider .intro-slider-item .scrol-icon i {
+    font-size: 50px;
+  }
+  .products-section .products-container .products-box {
+    height: 450px;
+  }
+  .section-content .prag {
+    width: 100%;
+  }
+  .contactus-section .contactus-form .form-group {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
