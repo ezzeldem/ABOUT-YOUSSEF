@@ -21,10 +21,29 @@ a:focus {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #eeeded;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 
 html[dir="rtl"] body {
   font-family: "Tajawal", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333232;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #0191c7;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #00719d;
 }
 
 .overlay-over {
@@ -864,8 +883,8 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
     text-align: center;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: .4s all ease-in-out;
-    transition: .4s all ease-in-out;
+    -webkit-transition: 0.4s all ease-in-out;
+    transition: 0.4s all ease-in-out;
   }
   .nav-bar-section .nav-ul .close-icon {
     position: absolute;
