@@ -796,3 +796,26 @@ input {
         }
     }
 }
+
+
+@media (max-width: 772px) {
+    .nav-bar-section{
+         .logo-img{
+            &.frist-logo{
+                display: none;
+            }
+            &.scound-logo{
+                display: block;
+                img{
+                    height: 60px;
+                }
+            }
+         }
+         .menu-icon{
+             align-items: center;
+             width: 100%;
+             display: flex;
+             justify-content: space-between;
+         }
+        }
+}

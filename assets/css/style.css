@@ -909,4 +909,28 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
     padding: 40px 0 207px;
   }
 }
+
+@media (max-width: 772px) {
+  .nav-bar-section .logo-img.frist-logo {
+    display: none;
+  }
+  .nav-bar-section .logo-img.scound-logo {
+    display: block;
+  }
+  .nav-bar-section .logo-img.scound-logo img {
+    height: 60px;
+  }
+  .nav-bar-section .menu-icon {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 /*# sourceMappingURL=style.css.map */
