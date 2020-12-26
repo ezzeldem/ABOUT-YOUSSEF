@@ -950,6 +950,9 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   .products-section .products-container .products-box.active .frist-box {
     max-height: unset;
   }
+  .contactus-section {
+    padding: 20px 0px;
+  }
   .contactus-section .contactus-form .form-group {
     width: 100%;
   }
