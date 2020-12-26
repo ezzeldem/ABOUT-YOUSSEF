@@ -751,11 +751,12 @@ input {
     }
     .menu-icon {
       display: block;
+      padding: 10px 20px;
       i {
         cursor: pointer;
         font-size: 30px;
         color: rgba($white-color, 1);
-        margin: 10px 40px;
+
       }
     }
     .nav-ul {
@@ -824,7 +825,19 @@ input {
 }
 
 @media (max-width: 772px) {
+
   .nav-bar-section {
+    .sochile-box{
+         .nav-boxSide{
+            margin-left: 29px;
+              .open-search-icon{
+                   i{
+                    font-size: 16px;
+                   }
+                }
+            }
+        }
+
     .logo-img {
       &.frist-logo {
         display: none;

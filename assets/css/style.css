@@ -864,12 +864,12 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   }
   .nav-bar-section .menu-icon {
     display: block;
+    padding: 10px 20px;
   }
   .nav-bar-section .menu-icon i {
     cursor: pointer;
     font-size: 30px;
     color: white;
-    margin: 10px 40px;
   }
   .nav-bar-section .nav-ul {
     z-index: 999;
@@ -930,6 +930,12 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 }
 
 @media (max-width: 772px) {
+  .nav-bar-section .sochile-box .nav-boxSide {
+    margin-left: 29px;
+  }
+  .nav-bar-section .sochile-box .nav-boxSide .open-search-icon i {
+    font-size: 16px;
+  }
   .nav-bar-section .logo-img.frist-logo {
     display: none;
   }
