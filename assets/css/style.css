@@ -1196,10 +1196,6 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   color: white;
 }
 
-body {
-  overflow-y: hidden !important;
-}
-
 .pop-up-box {
   position: fixed;
   top: 0;
@@ -1295,7 +1291,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding: .6em;
+  padding: 0.6em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1332,7 +1328,7 @@ body {
   max-height: 80px;
   overflow: hidden;
   color: white;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 0 0px 0 5px;
   font-style: italic;
 }
