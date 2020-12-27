@@ -1573,6 +1573,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 
 @media (max-width: 772px) {
   .intro-innerPage .intro-back {
+    background-position: top right;
     height: 350px;
   }
   .pop-up-box .pop-box {
