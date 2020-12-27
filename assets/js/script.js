@@ -107,7 +107,7 @@ $(document).ready(function () {
   // open popup
   $('.pop-up-opner').click(function (s) {
     s.stopPropagation();
-    $("#" + $(this).data("open")).addClass('open-poUp-box');
+    $("#" + $(this).data("opne")).addClass('open-poUp-box');
     $('body').addClass('overlay-over');
   });
   $('.pop-up-box .closePop-icon i').click(function () {

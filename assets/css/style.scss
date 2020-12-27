@@ -1121,8 +1121,8 @@ input {
 
 .pop-up-box {
   @extend.trans-4;
-//   opacity: 0;
-//   visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
     top: 0;
     left: 0;
