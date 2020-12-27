@@ -66,12 +66,12 @@ body {
         background: rgba($blue-color2, 1);
     }
 }
-.pop-up-opner{
-  cursor: pointer;
+.pop-up-opner {
+    cursor: pointer;
 }
-.open-poUp-box{
-  visibility: visible !important;
-  opacity: 1 !important;
+.open-poUp-box {
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .overlay-over {
@@ -1091,7 +1091,6 @@ input {
 // values-section
 
 .values-section {
-
     padding: 62px 0;
     .pop-up-section {
         .fastJs-tilt {
@@ -1120,10 +1119,10 @@ input {
 // pop-up-box
 
 .pop-up-box {
-  @extend.trans-4;
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
+    @extend.trans-4;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1133,22 +1132,22 @@ input {
     overflow-y: auto;
     padding: 40px 0;
     height: 100%;
-    .closePop-icon{
-      position: absolute;
-      top: 25px;
-      left: 81%;
-      i{
-        font-size: 24px;
-        color: rgba($blue-color, 1);
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background-color: rgba($white-color, 1);
-        cursor: pointer;
-      }
+    .closePop-icon {
+        position: absolute;
+        top: 25px;
+        left: 81%;
+        i {
+            font-size: 24px;
+            color: rgba($blue-color, 1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba($white-color, 1);
+            cursor: pointer;
+        }
     }
     .pop-box {
         margin: 0 auto;
@@ -1160,7 +1159,6 @@ input {
     }
 
     &.pop-box-1 {
-      
         .pop-box {
             background-image: url("../img/timelineBGPop.jpg");
             padding-top: 350px;
@@ -1306,59 +1304,57 @@ input {
         }
     }
 
-
-    &.pop-box-2{
+    &.pop-box-2 {
         .pop-box {
             background-size: contain;
             background-position: top;
             background-color: rgba($offWhite-color, 1);
             padding: 30px 0;
-            background-image: url('../img/MemebrBGPop.jpg');
-            .pop-title{
+            background-image: url("../img/MemebrBGPop.jpg");
+            .pop-title {
                 font-size: 26px;
                 font-weight: 600;
                 color: rgba($white-color, 1);
                 text-align: center;
-                span{
+                span {
                     display: block;
                 }
             }
-            .mang-ul{
-                margin : 250px 0 0;
-                li{
+            .mang-ul {
+                margin: 250px 0 0;
+                li {
                     display: flex;
                     margin: 10px 0;
                     align-items: center;
-                    .mang-img{
-                        margin: 0 30px ;
+                    .mang-img {
+                        margin: 0 30px;
                         border-radius: 50%;
                         overflow: hidden;
-                        border: 20px solid rgba($blue-color4, .5);
-                        -webkit-box-shadow: 1px 1px 13px 1px rgba($black-color , .5);
-                        box-shadow: 1px 1px 13px 1px rgba($black-color , .5);
+                        border: 20px solid rgba($blue-color4, 0.5);
+                        -webkit-box-shadow: 1px 1px 13px 1px rgba($black-color, 0.5);
+                        box-shadow: 1px 1px 13px 1px rgba($black-color, 0.5);
                         width: 25%;
                         margin: 0 20px;
-                        img{
+                        img {
                             width: 100%;
                         }
                     }
 
-                    .mang-disc{
-                        .mang-name{
+                    .mang-disc {
+                        .mang-name {
                             font-size: 20px;
                             color: rgba($blue-color2, 1);
-                            font-weight:700;
+                            font-weight: 700;
                             font-style: initial;
                             text-transform: uppercase;
                         }
-                        .mang-title{
+                        .mang-title {
                             font-size: 14px;
                             color: rgba($gray-color3, 1);
                             font-style: italic;
                             font-weight: 800;
                         }
                     }
-
 
                     &:nth-child(odd) {
                         justify-content: flex-start;
@@ -1371,123 +1367,86 @@ input {
             }
         }
     }
-
-
 }
 
 // pop-up-box
 
 @media (max-width: 992px) {
-
-    .pop-up-box{
-
-
-
-
-
-
-
-
-
-
-        &.pop-box-1{
-             .pop-box{
-
-
-                 padding-top: 30px;
-                .title-box{
-                     .title{
-                         color: rgba($white-color, 1);
-                         font-size: 14px;
-                        }
-                        .prag {
+    .pop-up-box {
+        &.pop-box-1 {
+            .pop-box {
+                padding-top: 30px;
+                .title-box {
+                    .title {
+                        color: rgba($white-color, 1);
+                        font-size: 14px;
+                    }
+                    .prag {
                         color: rgba($white-color, 1);
                         font-size: 10px;
                     }
-            }
+                }
 
-
-                  .pop-up-ul{
-                       li{
-                           .years-box{
+                .pop-up-ul {
+                    li {
+                        .years-box {
                             width: 50px;
                             height: 50px;
-                            font-size: 14px;   
+                            font-size: 14px;
                         }
-                    &:nth-child(odd) {
-                        .years-box{
-                        margin: 0px 90px 0 0;
-                    }
-                }
-                    &:nth-child(even) {
-                        .years-box{
-                        margin: 0px  0 0 90px   ;
-                    }
-                }
-                           .years-box{
-                                position: relative;
-                                left: unset !important;
-                                top: unset !important;
-                                right: unset !important;
-                                &::after{
-                                    display: none;
-                                }
-                            }
-
-
-                            .pop-box-li{
-                                width: 66%;
+                        &:nth-child(odd) {
+                            .years-box {
+                                margin: 0px 90px 0 0;
                             }
                         }
-                    }
-                }
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        &.pop-box-2{
-             .pop-box{
-                .pop-title {
-                    font-size: 18px;
-                }
-                  .mang-ul{
-                    margin: 40px 0;
-                    li{
-                        .mang-img{
-                            width: 20%; }
-                            .mang-disc {
-                                .mang-name{
-                                    font-size: 16px;
-                                }
-                                .mang-title{
-                                    font-size: 12px;
-                                }
+                        &:nth-child(even) {
+                            .years-box {
+                                margin: 0px 0 0 90px;
                             }
-                       
+                        }
+                        .years-box {
+                            position: relative;
+                            left: unset !important;
+                            top: unset !important;
+                            right: unset !important;
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                        .pop-box-li {
+                            width: 66%;
+                        }
                     }
-                  }
                 }
             }
         }
 
-
+        &.pop-box-2 {
+            .pop-box {
+                .pop-title {
+                    font-size: 18px;
+                }
+                .mang-ul {
+                    margin: 40px 0;
+                    li {
+                        .mang-img {
+                            width: 20%;
+                        }
+                        .mang-disc {
+                            .mang-name {
+                                font-size: 16px;
+                            }
+                            .mang-title {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-
 
 @media (max-width: 772px) {
     .intro-innerPage {
@@ -1496,133 +1455,83 @@ input {
         }
     }
 
-
-
-
-
-
-
-    .pop-up-box{
-
-
-
-
-
-        .pop-box{
+    .pop-up-box {
+        .pop-box {
             max-width: 90%;
         }
 
-  
-             .closePop-icon {
+        .closePop-icon {
             left: 78%;
-        
-    }
+        }
 
+        &.pop-box-1 {
+            .pop-box {
+                .pop-up-ul {
+                    li {
+                        flex-direction: column;
+                        .years-box {
+                        }
+                        &:nth-child(odd) {
+                            .years-box {
+                                margin: 0px auto;
+                            }
+                        }
+                        &:nth-child(even) {
+                            flex-direction: column-reverse;
+                            .years-box {
+                                margin: 0px auto;
+                            }
+                        }
 
+                        .pop-box-li {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
 
-
-
-
-
-
-
-
-
-    &.pop-box-1{
-        .pop-box{
-             .pop-up-ul{
-                  li{
-                      flex-direction: column;
-                      .years-box{
-
-
-
-                      }
-               &:nth-child(odd) {
-                   .years-box{
-                   margin: 0px auto ;
-               }
-           }
-               &:nth-child(even) {
-                flex-direction: column-reverse;
-                   .years-box{
-                    margin: 0px auto ;
-               }
-           }
-
-
-                       .pop-box-li{
-                           width: 100%;
-                       }
-                   }
-               }
-           }
-       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        &.pop-box-2{
-             .pop-box{
+        &.pop-box-2 {
+            .pop-box {
                 padding: 10px 0;
                 .pop-title {
                     font-size: 14px;
                 }
-                  .mang-ul{
+                .mang-ul {
                     margin: 40px 0;
-                    li{
-                        .mang-img{
-                            border-width: 6px; }
-                            .mang-disc {
-                                .mang-name{
-                                    font-size: 12px;
-                                }
-                                .mang-title{
-                                    font-size: 8px;
-                                }
-                            }
+                    li {
+                        .mang-img {
+                            border-width: 6px;
                         }
-                   
-                  }
-                }
-            }
-        }
-
-
-        .chairmanMaessage-section{
-             .js-tilt{
-                text-align: center;
-             }
-            }
-
-            .values-section{
-                 .pop-up-section{
-                      .fastJs-tilt{
-                           .c-example__tilt-inner{
-                                .pop-up-title{
-                                    font-size: 18px;
-                                }
+                        .mang-disc {
+                            .mang-name {
+                                font-size: 12px;
+                            }
+                            .mang-title {
+                                font-size: 8px;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
 
+    .chairmanMaessage-section {
+        .js-tilt {
+            text-align: center;
+        }
+    }
+
+    .values-section {
+        .pop-up-section {
+            .fastJs-tilt {
+                .c-example__tilt-inner {
+                    .pop-up-title {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
