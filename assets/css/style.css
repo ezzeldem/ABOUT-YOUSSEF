@@ -1517,9 +1517,87 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
           flex-direction: row-reverse;
 }
 
+@media (max-width: 992px) {
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(odd) .years-box {
+    margin: 0px 90px 0 0;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .years-box {
+    margin: 0px  0 0 90px;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li .years-box {
+    position: relative;
+    left: unset !important;
+    top: unset !important;
+    right: unset !important;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li .years-box::after {
+    display: none;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li .pop-box-li {
+    width: 66%;
+  }
+  .pop-up-box.pop-box-2 .pop-box .pop-title {
+    font-size: 18px;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul {
+    margin: 40px 0;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul li .mang-img {
+    width: 20%;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul li .mang-disc .mang-name {
+    font-size: 16px;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul li .mang-disc .mang-title {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 772px) {
   .intro-innerPage .intro-back {
     height: 350px;
+  }
+  .pop-up-box .closePop-icon {
+    left: 78%;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(odd) .years-box {
+    margin: 0px auto;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .years-box {
+    margin: 0px auto;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li .pop-box-li {
+    width: 100%;
+  }
+  .pop-up-box.pop-box-2 .pop-box {
+    padding: 10px 0;
+  }
+  .pop-up-box.pop-box-2 .pop-box .pop-title {
+    font-size: 14px;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul {
+    margin: 40px 0;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul li .mang-img {
+    border-width: 6px;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul li .mang-disc .mang-name {
+    font-size: 12px;
+  }
+  .pop-up-box.pop-box-2 .pop-box .mang-ul li .mang-disc .mang-title {
+    font-size: 8px;
   }
 }
 
