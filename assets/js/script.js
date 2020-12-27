@@ -93,6 +93,14 @@ $(document).ready(function(){
         maxGlare:10,
         perspective:1000,
       });
+      // tilt
+      $('.fastJs-tilt').tilt({
+        maxTilt:10,
+        speed:1000,
+        scale:1,
+        maxGlare:10,
+        perspective:1000,
+      });
 
 
 });
