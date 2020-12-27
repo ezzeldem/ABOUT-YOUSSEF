@@ -1518,6 +1518,22 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 }
 
 @media (max-width: 992px) {
+  .pop-up-box.pop-box-1 .pop-box {
+    padding-top: 30px;
+  }
+  .pop-up-box.pop-box-1 .pop-box .title-box .title {
+    color: white;
+    font-size: 14px;
+  }
+  .pop-up-box.pop-box-1 .pop-box .title-box .prag {
+    color: white;
+    font-size: 10px;
+  }
+  .pop-up-box.pop-box-1 .pop-box .pop-up-ul li .years-box {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
   .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(odd) .years-box {
     margin: 0px 90px 0 0;
   }
@@ -1556,6 +1572,9 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 @media (max-width: 772px) {
   .intro-innerPage .intro-back {
     height: 350px;
+  }
+  .pop-up-box .pop-box {
+    max-width: 90%;
   }
   .pop-up-box .closePop-icon {
     left: 78%;

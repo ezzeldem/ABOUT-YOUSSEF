@@ -1392,9 +1392,28 @@ input {
 
         &.pop-box-1{
              .pop-box{
+
+
+                 padding-top: 30px;
+                .title-box{
+                     .title{
+                         color: rgba($white-color, 1);
+                         font-size: 14px;
+                        }
+                        .prag {
+                        color: rgba($white-color, 1);
+                        font-size: 10px;
+                    }
+            }
+
+
                   .pop-up-ul{
                        li{
-                           
+                           .years-box{
+                            width: 50px;
+                            height: 50px;
+                            font-size: 14px;   
+                        }
                     &:nth-child(odd) {
                         .years-box{
                         margin: 0px 90px 0 0;
@@ -1484,6 +1503,16 @@ input {
 
 
     .pop-up-box{
+
+
+
+
+
+        .pop-box{
+            max-width: 90%;
+        }
+
+  
              .closePop-icon {
             left: 78%;
         
@@ -1504,6 +1533,11 @@ input {
              .pop-up-ul{
                   li{
                       flex-direction: column;
+                      .years-box{
+
+
+
+                      }
                &:nth-child(odd) {
                    .years-box{
                    margin: 0px auto ;
