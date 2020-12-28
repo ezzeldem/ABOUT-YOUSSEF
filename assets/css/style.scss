@@ -1564,6 +1564,25 @@ input {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 60px 0;
+    .slider-arrow{
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      .slider-arrow{
+        margin: 0 10px;
+        i{
+          justify-content: center;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: rgba($offWhite-color, 1);
+          color: rgba($blue-color3, 1);
+        }
+      }
+    }
     .pmacCourses-slider{
       .pmacCourses-slider-item{
         .img-popUp{

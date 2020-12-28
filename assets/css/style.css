@@ -1656,6 +1656,38 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   padding: 60px 0;
 }
 
+.interestedPmacCourses .pmacCourses-section .slider-arrow {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.interestedPmacCourses .pmacCourses-section .slider-arrow .slider-arrow {
+  margin: 0 10px;
+}
+
+.interestedPmacCourses .pmacCourses-section .slider-arrow .slider-arrow i {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #eeeded;
+  color: #007bff;
+}
+
 .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp {
   position: relative;
   background-position: center;
