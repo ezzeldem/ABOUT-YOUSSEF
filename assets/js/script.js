@@ -59,27 +59,31 @@ $(document).ready(function () {
     arrows: false,
     fade: true
   });
-  $('.our-taem-slider').slick({
+
+
+  // pmacCourses-slider
+  $('.pmacCourses-slider').slick({
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     outhight: true,
-    prevArrow: "<div class='circle-arrow devo-left'></div>",
-    nextArrow: "<div class='circle-arrow devo-right'></div>",
+    // prevArrow: "<div class='circle-arrow devo-left'></div>",
+    // nextArrow: "<div class='circle-arrow devo-right'></div>",
     autoplaySpeed: 2000,
     autoplay: false,
-    centerMode: true,
-    centerPadding: '0px',
-    dots: true,
+    dots: false,
     arrows: true,
     responsive: [
 
       {
         breakpoint: 997,
         settings: {
+          slidesToShow: 2,
+        }
+      },{
+        breakpoint: 772,
+        settings: {
           slidesToShow: 1,
-          infinite: true,
-          dots: true,
-          arrows: true,
         }
       },
     ]

@@ -67,7 +67,7 @@ html[dir="rtl"] body {
 }
 
 .trans-4, .buttom-style, .chat-head, .buttom-link a, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
-.contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box {
+.contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -228,6 +228,8 @@ input:focus {
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 2;
+  -webkit-box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
+          box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
 }
 
 .nav-bar-section .logo-img {
@@ -1081,6 +1083,22 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   background-size: cover;
   background-repeat: no-repeat;
   height: 625px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.intro-innerPage .intro-back .page-title {
+  font-size: 54px;
+  text-decoration: underline;
+  color: white;
+  font-weight: 600;
 }
 
 .page-ul-section {
@@ -1627,5 +1645,114 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   .values-section .pop-up-section .fastJs-tilt .c-example__tilt-inner .pop-up-title {
     font-size: 18px;
   }
+}
+
+.pmacCourses-section {
+  background-image: url("../img/PAMC2BG.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 270px;
+  width: 270px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 15px solid #eeeded;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp:hover .pmacCourses-title {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp:hover .prag {
+  -webkit-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title {
+  position: absolute;
+  background: rgba(0, 113, 157, 0.7);
+  top: 30%;
+  right: 8%;
+  border-radius: 50%;
+  padding: 45px 0px;
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag {
+  -webkit-transform: scale(0) translate(-50%, -50%);
+          transform: scale(0) translate(-50%, -50%);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background: #00719d;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  padding: 45px 10px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span {
+  font-size: 12px;
+  color: white;
+  border-radius: 2px;
+  border: 1px solid white;
+  padding: 6px 30px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span:hover {
+  background-color: #0191c7;
 }
 /*# sourceMappingURL=style.css.map */
