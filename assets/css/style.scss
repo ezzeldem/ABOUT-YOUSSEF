@@ -930,6 +930,7 @@ input {
 
 @media (max-width: 772px) {
     .nav-bar-section {
+        box-shadow: 1px 8px 82px 60px rgba($black-color, 0.7);
         .sochile-box {
             .nav-boxSide {
                 margin-left: 29px;
@@ -1488,8 +1489,13 @@ input {
 @media (max-width: 772px) {
     .intro-innerPage {
         .intro-back {
+            padding: 50px 0;
+            align-items: flex-end;
             background-position: top right;
             height: 350px;
+            .page-title {
+                font-size: 37px
+            }
         }
     }
 

@@ -1064,6 +1064,10 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 }
 
 @media (max-width: 772px) {
+  .nav-bar-section {
+    -webkit-box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
+            box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
+  }
   .nav-bar-section .sochile-box .nav-boxSide {
     margin-left: 29px;
   }
@@ -1635,8 +1639,15 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 
 @media (max-width: 772px) {
   .intro-innerPage .intro-back {
+    padding: 50px 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     background-position: top right;
     height: 350px;
+  }
+  .intro-innerPage .intro-back .page-title {
+    font-size: 37px;
   }
   .pop-up-box .pop-box {
     max-width: 90%;
