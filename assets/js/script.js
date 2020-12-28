@@ -117,7 +117,11 @@ $(document).ready(function () {
   $('.pop-up-box .closePop-icon i').click(function () {
     $(".pop-up-box").removeClass('open-poUp-box');
     $('body').removeClass('overlay-over');
+  });
 
+  // open interested-section 
+  $('.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span').click(function () {
+    $('.interestedPmacCourses .interested-section').slideToggle();
   });
 
 

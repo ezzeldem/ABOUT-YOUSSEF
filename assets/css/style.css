@@ -67,7 +67,8 @@ html[dir="rtl"] body {
 }
 
 .trans-4, .buttom-style, .chat-head, .buttom-link a, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
-.contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span {
+.contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -1647,7 +1648,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   }
 }
 
-.pmacCourses-section {
+.interestedPmacCourses .pmacCourses-section {
   background-image: url("../img/PAMC2BG.png");
   background-position: center;
   background-size: cover;
@@ -1655,7 +1656,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   padding: 60px 0;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp {
   position: relative;
   background-position: center;
   background-size: cover;
@@ -1669,21 +1670,21 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   cursor: pointer;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp:hover .pmacCourses-title {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp:hover .pmacCourses-title {
   -webkit-transform: scale(0);
           transform: scale(0);
   opacity: 0;
   visibility: hidden;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp:hover .prag {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp:hover .prag {
   -webkit-transform: scale(1) translate(-50%, -50%);
           transform: scale(1) translate(-50%, -50%);
   opacity: 1;
   visibility: visible;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title {
   position: absolute;
   background: rgba(0, 113, 157, 0.7);
   top: 30%;
@@ -1707,7 +1708,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   color: white;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag {
   -webkit-transform: scale(0) translate(-50%, -50%);
           transform: scale(0) translate(-50%, -50%);
   -webkit-transform-origin: center;
@@ -1737,12 +1738,12 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   color: white;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section {
   margin: 40px 0;
   text-align: center;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span {
   font-size: 12px;
   color: white;
   border-radius: 2px;
@@ -1752,7 +1753,80 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   cursor: pointer;
 }
 
-.pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span:hover {
+.interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span:hover {
   background-color: #0191c7;
+}
+
+.interestedPmacCourses .interested-section {
+  display: none;
+  padding: 40px 0 60px;
+  background-color: #034159;
+}
+
+.interestedPmacCourses .interested-section .section-content {
+  margin: 0 0 14px;
+}
+
+.interestedPmacCourses .interested-section .interested-form .buttom-link {
+  text-align: end;
+  margin: 20px 0 0;
+}
+
+.interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button {
+  border-radius: 2px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 40px;
+  font-weight: 600;
+}
+
+.interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button:hover {
+  background-color: white;
+  border-color: white;
+  color: #0191c7;
+}
+
+.interestedPmacCourses .interested-section .interested-form .form-group .input-style,
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+  height: 50px;
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+.interestedPmacCourses .interested-section .interested-form .form-group .input-style::-webkit-input-placeholder,
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option::-webkit-input-placeholder {
+  color: white;
+}
+
+.interestedPmacCourses .interested-section .interested-form .form-group .input-style:-ms-input-placeholder,
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option:-ms-input-placeholder {
+  color: white;
+}
+
+.interestedPmacCourses .interested-section .interested-form .form-group .input-style::-ms-input-placeholder,
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option::-ms-input-placeholder {
+  color: white;
+}
+
+.interestedPmacCourses .interested-section .interested-form .form-group .input-style::placeholder,
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option::placeholder {
+  color: white;
+}
+
+.interestedPmacCourses .interested-section .interested-form .form-group .input-style:focus,
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option:focus {
+  border-bottom: 1px solid #0191c7;
+  outline: none;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
 }
 /*# sourceMappingURL=style.css.map */
