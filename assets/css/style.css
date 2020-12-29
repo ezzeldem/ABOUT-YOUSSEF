@@ -1946,4 +1946,56 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 .corporate-section .corporate-slider .corporate-slider-item .section-content {
   margin: 20px 0;
 }
+
+.contact-section .contact-box {
+  position: relative;
+  background-color: white;
+  padding: 30px;
+  margin: 15px 0 40px;
+}
+
+.contact-section .contact-box:after {
+  -webkit-box-shadow: 0px 8px 33px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 8px 33px 3px rgba(0, 0, 0, 0.4);
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  width: 60%;
+  height: 60%;
+  z-index: -1;
+  left: 20%;
+}
+
+.contact-section .contact-box .adress-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00719d;
+  margin: 15px 0;
+}
+
+.contact-section .contact-box .adress-title i {
+  color: white;
+  background-color: #333232;
+  border-radius: 50%;
+  padding: 7px 10px;
+  margin: 0 5px;
+}
+
+.contact-section .contact-box .prag {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00719d;
+  margin: 15px 0;
+}
+
+.contact-section .contact-box .contact-ditales {
+  font-size: 16px;
+  font-weight: 500;
+  color: #00719d;
+  margin: 15px 0;
+}
+
+.contact-section .contact-box .contact-ditales span {
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */
