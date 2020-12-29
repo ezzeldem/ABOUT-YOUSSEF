@@ -180,12 +180,26 @@ input {
     }
 }
 
+
+
+
+.back-img{
+        background-image: url("../img/CSRBG.jpg");
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
 .prag {
     font-size: 14px;
     font-weight: 500;
     color: rgba($gray-color2, 1);
     .about-section-2 & {
         width: 100% !important;
+    }
+    &.blue-color{
+        color: rgba($blue-color2, 1);
     }
 }
 .section-title {
@@ -1732,11 +1746,8 @@ input {
 // gallery-section
 
 .gallery-section {
-    background-image: url("../img/CSRBG.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 60px 0;
+
+    @extend.back-img;
 
     .gallery-slider {
         .slick-slide {
@@ -1770,3 +1781,20 @@ input {
 }
 
 // gallery-section
+
+
+// corporate-section
+
+.corporate-section{
+    @extend.back-img;
+
+    .corporate-slider{
+        .corporate-slider-item{
+            width: calc(100% - 20px) !important;
+            .section-content{
+                margin: 20px 0;
+            }
+        }
+    }
+}
+// corporate-section

@@ -103,6 +103,32 @@ $(document).ready(function () {
           },
       ],
   });
+  // corporate-slider-slider
+  $(".corporate-slider").slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $("#corporate-slider-left"),
+      nextArrow: $("#corporate-slider-right"),
+      autoplaySpeed: 2000,
+      autoplay: false,
+      dots: false,
+      arrows: true,
+      responsive: [
+          {
+              breakpoint: 997,
+              settings: {
+                  slidesToShow: 2,
+              },
+          },
+          {
+              breakpoint: 772,
+              settings: {
+                  slidesToShow: 1,
+              },
+          },
+      ],
+  });
 
   // tilt
   $(".js-tilt").tilt({

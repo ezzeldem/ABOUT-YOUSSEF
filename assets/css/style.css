@@ -192,6 +192,14 @@ input:focus {
           box-shadow: unset;
 }
 
+.back-img, .gallery-section, .corporate-section {
+  background-image: url("../img/CSRBG.jpg");
+  background-position: left center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+}
+
 .prag {
   font-size: 14px;
   font-weight: 500;
@@ -200,6 +208,10 @@ input:focus {
 
 .about-section-2 .prag {
   width: 100% !important;
+}
+
+.prag.blue-color {
+  color: #00719d;
 }
 
 .section-title {
@@ -1884,14 +1896,6 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
           box-shadow: unset;
 }
 
-.gallery-section {
-  background-image: url("../img/CSRBG.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 60px 0;
-}
-
 .gallery-section .gallery-slider .slick-slide {
   height: 100%;
   -webkit-box-flex: 1;
@@ -1933,5 +1937,13 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   color: #034159;
   font-weight: 600;
   margin: 18px 0;
+}
+
+.corporate-section .corporate-slider .corporate-slider-item {
+  width: calc(100% - 20px) !important;
+}
+
+.corporate-section .corporate-slider .corporate-slider-item .section-content {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
