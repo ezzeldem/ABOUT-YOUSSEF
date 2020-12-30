@@ -103,6 +103,35 @@ $(document).ready(function () {
             },
         ],
     });
+    // video-slider
+    $(".video-slider").slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
+        nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
+        autoplay: true,
+        dots: true,
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 772,
+                settings: {
+                    centerMode: false,
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
     // corporate-slider-slider
     $(".corporate-slider").slick({
         infinite: false,

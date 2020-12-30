@@ -68,7 +68,7 @@ html[dir="rtl"] body {
 
 .trans-4, .buttom-style, .slider-arrow-box .slider-arrow i, .slider-dutos-style .circle-arrow, .slider-dutos-style .slick-dots li button:before, .chat-head, .buttom-link a, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
 .contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
-.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow {
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -281,7 +281,7 @@ input:focus {
           box-shadow: unset;
 }
 
-.back-img, .gallery-section, .corporate-section, .img-slider-section, .awards-section, .event-slider-section, .news-section {
+.back-img, .gallery-section, .corporate-section, .img-slider-section, .awards-section, .event-slider-section, .news-section, .video-section {
   background-image: url("../img/CSRBG.jpg");
   background-position: left center;
   background-size: cover;
@@ -2246,6 +2246,69 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   padding: 10px;
 }
 
+.video-section {
+  background-image: url("../img/Media5BG.jpg");
+  padding: 40px 0;
+}
+
+.video-section .video-slider.slider-dutos-style .slick-dots li.slick-active button:before {
+  background-color: #ea3f2e;
+}
+
+.video-section .video-slider.slider-dutos-style .slick-dots li button:before {
+  border-color: #1d709e;
+  background-color: white;
+}
+
+.video-section .video-slider .video-slider-item {
+  width: calc(100% - 20px) !important;
+}
+
+.video-section .video-slider .video-slider-item a:hover .video-box span {
+  color: #ea3f2e;
+  background-color: #eeeded;
+}
+
+.video-section .video-slider .video-slider-item a .video-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.video-section .video-slider .video-slider-item a .video-box .video-title {
+  font-size: 18px;
+  color: white;
+  background-color: rgba(51, 50, 50, 0.8);
+  display: inline-block;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.video-section .video-slider .video-slider-item a .video-box span {
+  padding: 5px 40px;
+  color: white;
+  background-color: #ea3f2e;
+  border-radius: 50px;
+  font-size: 14px;
+  border: 1px solid #ea3f2e;
+}
+
 @media (max-width: 772px) {
   .img-slider-section .img-slider .img-slider-item {
     text-align: center;
@@ -2292,6 +2355,13 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
     width: 20px;
     height: 20px;
     border: 4px solid #eeeded;
+  }
+  .video-section .video-slider .video-slider-item a .video-box {
+    height: 300px;
+    padding: 20px;
+  }
+  .video-section .video-slider .video-slider-item a .video-box .video-title {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

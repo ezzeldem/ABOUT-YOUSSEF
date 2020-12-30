@@ -2106,61 +2106,147 @@ input {
 
 // news-slider-section
 
+// video-section
 
-@media(max-width:772px){
-
-    .img-slider-section{
-         .img-slider{
-              .img-slider-item{
-                  text-align: center;
-                img{
-                    margin: 0 auto;
-                }
+.video-section {
+  @extend.back-img;
+  background-image: url("../img/Media5BG.jpg");
+  padding: 40px 0;
+  .video-slider {
+    &.slider-dutos-style {
+      .slick-dots {
+        li {
+          &.slick-active {
+            button {
+              &:before {
+                background-color: rgba($orang-color, 1);
               }
-            }
-        }
-
-
-    .slider-dutos-style {
-        text-align: center;
-        img{
-            margin: 0 auto;
-        }
-        &::after{
-            width: 100%;
-        }
-        .circle-arrow {
-          right: 0;
-          bottom: 8px;
-          font-size: 22px;
-          height: 30px;
-          width: 30px;
-          &.slick-disabled {
-            opacity: 0.4;
-            cursor: unset;
-            &:hover {
-              background-color: rgba($offWhite-color, 1);
-              color: rgba($blue-color, 1);
             }
           }
-          &.devo-left {
-            left: 0px;
-            right:unset;
-        }
-        }
-        .slick-dots {
-          bottom: -10px;
-          li {
-            button {
-              width: 20px;
-              height: 20px;
-              &:before {
-                width: 20px;
-                height: 20px;
-                border: 4px solid #eeeded;
-              }
+          button {
+            &:before {
+              border-color: #1d709e;
+              background-color: rgba($white-color, 1);
             }
           }
         }
       }
+    }
+
+    .video-slider-item {
+      width: calc(100% - 20px) !important;
+      a {
+        &:hover {
+          .video-box {
+            span {
+              color: rgba($orang-color, 1);
+              background-color: rgba($offWhite-color, 1);
+            }
+          }
+        }
+        .video-box {
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 500px;
+          padding: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          flex-direction: column;
+          .video-title {
+            font-size: 18px;
+            color: rgba($white-color, 1);
+            background-color: rgba($gray-color, 0.8);
+            display: inline-block;
+            padding: 30px;
+            margin: 20px 0;
+          }
+          span {
+            padding: 5px 40px;
+            color: rgba($white-color, 1);
+            background-color: rgba($orang-color, 1);
+            border-radius: 50px;
+            font-size: 14px;
+            @extend.trans-4;
+            border: 1px solid rgba($orang-color, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// video-section
+
+@media (max-width: 772px) {
+  .img-slider-section {
+    .img-slider {
+      .img-slider-item {
+        text-align: center;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .slider-dutos-style {
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
+    &::after {
+      width: 100%;
+    }
+    .circle-arrow {
+      right: 0;
+      bottom: 8px;
+      font-size: 22px;
+      height: 30px;
+      width: 30px;
+      &.slick-disabled {
+        opacity: 0.4;
+        cursor: unset;
+        &:hover {
+          background-color: rgba($offWhite-color, 1);
+          color: rgba($blue-color, 1);
+        }
+      }
+      &.devo-left {
+        left: 0px;
+        right: unset;
+      }
+    }
+    .slick-dots {
+      bottom: -10px;
+      li {
+        button {
+          width: 20px;
+          height: 20px;
+          &:before {
+            width: 20px;
+            height: 20px;
+            border: 4px solid #eeeded;
+          }
+        }
+      }
+    }
+  }
+  .video-section{
+       .video-slider{
+            .video-slider-item{
+                 a{
+                      .video-box{
+                        height:300px ;
+                        padding: 20px;
+                        .video-title{
+                            font-size: 14px;
+                        }
+                      }
+                    }
+                }
+            }
+        }
 }
