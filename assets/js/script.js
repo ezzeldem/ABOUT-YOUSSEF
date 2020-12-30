@@ -90,7 +90,7 @@ $(document).ready(function () {
         arrows: true,
         responsive: [
             {
-                breakpoint: 997,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                 },
@@ -184,6 +184,62 @@ $(document).ready(function () {
         ],
     });
 
+
+
+        // event-slider-slider
+        $(".event-slider").slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
+            nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
+            autoplaySpeed: 2000,
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 997,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 772,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+            ],
+        });
+
+                // news-slider-slider
+                $(".news-slider").slick({
+                    infinite: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
+                    nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
+                    autoplaySpeed: 2000,
+                    autoplay: false,
+                    dots: true,
+                    arrows: true,
+                    responsive: [
+                        {
+                            breakpoint: 997,
+                            settings: {
+                                slidesToShow: 2,
+                            },
+                        },
+                        {
+                            breakpoint: 772,
+                            settings: {
+                                slidesToShow: 1,
+                            },
+                        },
+                    ],
+                });
+    
     // tilt
     $(".js-tilt").tilt({
         maxTilt: 10,
