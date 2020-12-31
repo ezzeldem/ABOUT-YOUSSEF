@@ -2201,6 +2201,12 @@ input {
 @media (max-width: 772px) {
   .img-slider-section {
     .img-slider {
+      .circle-arrow {
+        &.devo-left {
+          left: 0;
+        }
+      }
+
       .img-slider-item {
         text-align: center;
         img {
