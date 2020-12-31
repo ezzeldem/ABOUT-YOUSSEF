@@ -1145,6 +1145,12 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
     text-align: center;
     display: block;
   }
+  .nav-bar-section .nav-ul ul li {
+    margin: 10px 0;
+  }
+  .nav-bar-section .nav-ul ul li a {
+    font-size: 14px;
+  }
   .products-section .products-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
