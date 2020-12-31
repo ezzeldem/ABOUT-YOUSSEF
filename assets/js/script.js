@@ -301,6 +301,12 @@ $(document).ready(function () {
         var content = $(this).data("discription");
         $("#exampleModal .modal-body").text(content);
     });
+    // opne project-box
+    $('.product-section .prodact-box .title-box .project-title').click(function(){
+        $("#" + $(this).data("projet")).toggleClass("active-opne");
+    });
+
+
 
     // AOS
     AOS.init();

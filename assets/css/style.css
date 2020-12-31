@@ -68,7 +68,7 @@ html[dir="rtl"] body {
 
 .trans-4, .buttom-style, .slider-arrow-box .slider-arrow i, .slider-dutos-style .circle-arrow, .slider-dutos-style .slick-dots li button:before, .chat-head, .buttom-link a, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
 .contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
-.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span {
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -285,7 +285,7 @@ input:focus {
           box-shadow: unset;
 }
 
-.back-img, .gallery-section, .corporate-section, .img-slider-section, .awards-section, .event-slider-section, .news-section, .video-section {
+.back-img, .gallery-section, .corporate-section, .img-slider-section, .awards-section, .event-slider-section, .news-section, .video-section, .product-section {
   background-image: url("../img/CSRBG.jpg");
   background-position: left center;
   background-size: cover;
@@ -2391,6 +2391,119 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   }
   .video-section .video-slider .video-slider-item a .video-box .video-title {
     font-size: 14px;
+  }
+}
+
+.product-section {
+  background-image: url("../img/ProductsBG.jpg");
+}
+
+.product-section .prodact-box {
+  position: relative;
+  margin: 0 0 70px;
+}
+
+.product-section .prodact-box .img-box img {
+  border-radius: 50%;
+  border: 1px solid #eeeded;
+  width: 414px;
+}
+
+.product-section .prodact-box .title-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -26px;
+  left: -26px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.product-section .prodact-box .title-box .project-title {
+  background: #0191c7;
+  border: 6px solid #eeeced;
+  text-transform: uppercase;
+  border-radius: 50%;
+  width: 50%;
+  height: 185px;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #eeeded;
+  text-align: center;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.product-section .prodact-box .title-box .project-title:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.product-section .prodact-box .title-box .productInner_Items {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-section .prodact-box .title-box .productInner_Items.active-opne {
+  -webkit-transform: translateY(147px) translateX(-55px);
+          transform: translateY(147px) translateX(-55px);
+  opacity: 1;
+}
+
+.product-section .prodact-box .title-box .productInner_Items .menu-item {
+  background: #888787;
+  border-radius: 100%;
+  border: 8px solid #eeeced;
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 12px;
+  z-index: 10;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.product-section .prodact-box .title-box .productInner_Items .menu-item:hover {
+  background-color: #0191c7;
+}
+
+@media (max-width: 500px) {
+  .product-section .prodact-box .title-box {
+    left: 10px;
+  }
+  .product-section .prodact-box .title-box .project-title {
+    width: 40%;
+    height: 125px;
   }
 }
 /*# sourceMappingURL=style.css.map */
