@@ -68,7 +68,7 @@ html[dir="rtl"] body {
 
 .trans-4, .buttom-style, .slider-arrow-box .slider-arrow i, .slider-dutos-style .circle-arrow, .slider-dutos-style .slick-dots li button:before, .chat-head, .buttom-link a, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
 .contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
-.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item {
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -285,7 +285,7 @@ input:focus {
           box-shadow: unset;
 }
 
-.back-img, .gallery-section, .corporate-section, .img-slider-section, .awards-section, .event-slider-section, .news-section, .video-section, .product-section {
+.back-img, .gallery-section, .corporate-section, .img-slider-section, .awards-section, .event-slider-section, .news-section, .video-section, .product-section, .career-section, .careerVideo-section {
   background-image: url("../img/CSRBG.jpg");
   background-position: left center;
   background-size: cover;
@@ -2511,6 +2511,223 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
     height: 76px;
     font-size: 10px;
     border: 2px solid #eeeced;
+  }
+}
+
+.career-section {
+  background-image: url("../img/CarerrBG.jpg");
+  position: relative;
+}
+
+.career-section::before {
+  background-image: url("../img/ContactUsBGLeft.png");
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.career-section .section-content {
+  margin: 0 0 22px;
+}
+
+.career-section .career-pop-up ul li {
+  margin: 10px 0;
+}
+
+.career-section .career-pop-up ul li .career-title {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+}
+
+.career-section .career-pop-up ul li .career-title:hover {
+  text-decoration: underline;
+  color: #00709e;
+  font-weight: 500;
+}
+
+.career-section .left-box {
+  padding: 0 0 0 150px;
+}
+
+.career-section .left-box .form-box .career-select {
+  width: 100%;
+  display: block;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333232;
+  background-color: white;
+  background-clip: padding-box;
+  border: 1px solid #c6c4c4;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.career-section .left-box .form-box .career-select:focus {
+  outline: none;
+}
+
+.career-section .left-box .form-box .input-box {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.career-section .left-box .form-box .input-box .inputfile {
+  display: none;
+}
+
+.career-section .left-box .form-box .input-box .label-file-name {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  background: #034159;
+  padding: 15px 10px;
+  border: 1px solid #034159;
+  cursor: pointer;
+  height: initial;
+  width: 100%;
+  text-align: center;
+}
+
+.career-section .left-box .form-box .input-box .label-file-name:hover {
+  color: #00719d;
+  background: #c6c4c4;
+  border-color: #c6c4c4;
+}
+
+.career-section .left-box .form-box .input-box .send-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #00719d;
+  background: #c6c4c4;
+  padding: 15px 10px;
+  border: 0px solid #c6c4c4;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.career-section .left-box .form-box .input-box .send-button:hover {
+  background-color: #034159;
+  color: white;
+}
+
+.careerVideo-section {
+  background-image: url("../img/AboutBG.jpg");
+}
+
+.careerVideo-section .video-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 466px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.careerVideo-section .video-box .video-title {
+  font-size: 18px;
+  color: white;
+  background-color: rgba(51, 50, 50, 0.8);
+  display: inline-block;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+.careerVideo-section .video-box span {
+  padding: 5px 40px;
+  color: white;
+  background-color: #ea3f2e;
+  border-radius: 50px;
+  font-size: 14px;
+  border: 1px solid #ea3f2e;
+}
+
+.digital-section {
+  padding: 20px 0;
+  background-color: #034159;
+}
+
+.digital-section .digital-content .prag {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+@media (max-width: 992px) {
+  .career-section .left-box {
+    padding: 0;
+  }
+}
+
+@media (max-width: 772px) {
+  .career-section::before {
+    display: none;
+  }
+  .career-section .section-content {
+    margin: 40px 0 0;
+  }
+  .career-section .section-content .section-title,
+  .career-section .section-content .prag {
+    color: #00719d !important;
+  }
+  .career-section .career-pop-up ul li .career-title {
+    font-size: 14px;
+  }
+  .careerVideo-section .video-box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 305px;
   }
 }
 /*# sourceMappingURL=style.css.map */

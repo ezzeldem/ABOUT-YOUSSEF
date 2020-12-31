@@ -298,9 +298,20 @@ $(document).ready(function () {
 
     //   opne award-box
     $(".award-box").click(function () {
-        var content = $(this).data("discription");
-        $("#exampleModal .modal-body").text(content);
+        var award_pop_content = $(this).data("discription");
+        $("#exampleModal .modal-body").text(award_pop_content);
     });
+
+
+        //   opne careerModal
+        $(".career-section .career-pop-up ul li .career-title").click(function () {
+            var career_pop_title = $(this).data("careertitle");
+            var career_pop_content = $(this).data("careerdiscription");
+            $("#careerModal .modal-title").text(career_pop_title);
+            $("#careerModal .modal-body .prag").text(career_pop_content);
+        });
+
+
     // opne project-box
     $('.product-section .prodact-box .title-box .project-title').click(function(){
         $("#" + $(this).data("projet")).toggleClass("active-opne");
