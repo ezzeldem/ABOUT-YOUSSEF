@@ -2395,7 +2395,19 @@ input {
         .project-title {
             width: 40%;
             height: 125px;
+            font-size: 12px;
         }
+
+         .productInner_Items{
+              .menu-item{
+                width: 76px;
+                height: 76px;
+                font-size: 10px;
+                border: 2px solid #eeeced;
+              }
+            }
+
+
       }
     }
   }

@@ -2504,6 +2504,13 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   .product-section .prodact-box .title-box .project-title {
     width: 40%;
     height: 125px;
+    font-size: 12px;
+  }
+  .product-section .prodact-box .title-box .productInner_Items .menu-item {
+    width: 76px;
+    height: 76px;
+    font-size: 10px;
+    border: 2px solid #eeeced;
   }
 }
 /*# sourceMappingURL=style.css.map */
