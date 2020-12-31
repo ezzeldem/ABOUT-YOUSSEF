@@ -73,6 +73,10 @@ html[dir="rtl"] body {
   transition: 0.4s all ease-in-out;
 }
 
+.section-style-2 .section-content {
+  margin: 0 0 20px;
+}
+
 .buttom-style {
   color: white;
   font-size: 10px;
@@ -1225,6 +1229,9 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   }
   .contactus-section .contactus-form .form-group {
     width: 100%;
+  }
+  .footer-section .footer-title {
+    margin: 40px 0 10px;
   }
 }
 

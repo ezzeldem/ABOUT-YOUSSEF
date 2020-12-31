@@ -88,6 +88,12 @@ body {
   transition: 0.4s all ease-in-out;
 }
 
+.section-style-2 {
+  .section-content {
+    margin: 0 0 20px;
+  }
+}
+
 .buttom-style {
   color: rgba($white-color, 1);
   font-size: 10px;
@@ -997,11 +1003,11 @@ input {
       ul {
         text-align: center;
         display: block;
-        li{
-            margin: 10px 0;
-            a{
-                font-size: 14px;
-            }
+        li {
+          margin: 10px 0;
+          a {
+            font-size: 14px;
+          }
         }
       }
     }
@@ -1114,6 +1120,12 @@ input {
       .form-group {
         width: 100%;
       }
+    }
+  }
+
+  .footer-section {
+    .footer-title {
+      margin: 40px 0 10px;
     }
   }
 }
@@ -2240,19 +2252,19 @@ input {
       }
     }
   }
-  .video-section{
-       .video-slider{
-            .video-slider-item{
-                 a{
-                      .video-box{
-                        height:300px ;
-                        padding: 20px;
-                        .video-title{
-                            font-size: 14px;
-                        }
-                      }
-                    }
-                }
+  .video-section {
+    .video-slider {
+      .video-slider-item {
+        a {
+          .video-box {
+            height: 300px;
+            padding: 20px;
+            .video-title {
+              font-size: 14px;
             }
+          }
         }
+      }
+    }
+  }
 }
