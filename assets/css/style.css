@@ -2327,6 +2327,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
     left: 0;
   }
   .img-slider-section .img-slider .img-slider-item {
+    width: 100% !important;
     text-align: center;
   }
   .img-slider-section .img-slider .img-slider-item img {
