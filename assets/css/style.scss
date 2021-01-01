@@ -416,8 +416,8 @@ input {
         z-index: -1;
         html[dir="rtl"] & {
           transform: rotate(180deg);
-          left:unset;
-          right:-51px;
+          left: unset;
+          right: -51px;
         }
       }
       html[dir="rtl"] & {
@@ -1418,7 +1418,7 @@ input {
                 height: 200px;
                 html[dir="rtl"] & {
                   left: -32px;
-                  right:unset;
+                  right: unset;
                   transform: rotate(180deg);
                 }
               }
@@ -1430,15 +1430,15 @@ input {
                 background-color: rgba($gray-color4, 1);
                 left: -19px;
                 html[dir="rtl"] & {
-                  left:unset;
+                  left: unset;
                   right: -19px;
                 }
               }
               &::before {
                 right: -1px;
                 html[dir="rtl"] & {
-                  right:unset;
-                  left:1px;
+                  right: unset;
+                  left: 1px;
                 }
               }
             }
@@ -1461,7 +1461,7 @@ input {
                 height: 200px;
                 html[dir="rtl"] & {
                   right: -32px;
-                  left:unset;
+                  left: unset;
                   transform: rotate(180deg);
                 }
               }
@@ -1480,7 +1480,7 @@ input {
                 left: -1px;
                 html[dir="rtl"] & {
                   left: unset;
-                right:-1px;
+                  right: -1px;
                 }
               }
             }
@@ -2462,13 +2462,12 @@ input {
     background-position: center;
     html[dir="rtl"] & {
       transform: rotate(180deg);
-      right:unset;
-      left:0;
+      right: unset;
+      left: 0;
     }
   }
   .section-content {
     margin: 0 0 22px;
-    
   }
 
   .career-pop-up {
@@ -2666,55 +2665,123 @@ input {
   }
 }
 
-
-.custom-modle{
-  .modal-title{
+.custom-modle {
+  .modal-title {
     font-size: 20px;
     color: rgba($blue-color, 1);
     font-weight: 600;
   }
-  .modal-body{
-    .img-box{
+  .modal-body {
+    .img-box {
       text-align: center;
-      img{
+      img {
         height: 300px;
       }
     }
-    .section-content{
-      .section-title{
+    .section-content {
+      .section-title {
         font-size: 18px;
-        &.downlode-title{
-          margin:30px 0 10px;
+        &.downlode-title {
+          margin: 30px 0 10px;
           color: rgba($blue-color4, 1);
         }
       }
-      .prag{
+      .prag {
         font-size: 14px;
       }
-      .downlode-link{
+      .downlode-link {
         margin: 0 40px;
         font-size: 16px;
-        color:rgba($blue-color2, 1);
+        color: rgba($blue-color2, 1);
         font-weight: 600;
         @extend.trans-4;
-        &:hover{
+        &:hover {
           color: rgba($orang-color, 1);
         }
       }
-      .pop-up-table{
+      .pop-up-table {
         // margin: 50px 0 0;
-        tr{
-          th{
+        tr {
+          th {
             font-size: 16px;
-            color: rgba($black-color, .8);
+            color: rgba($black-color, 0.8);
             font-weight: 600;
             margin: 0 0 10px;
           }
-          td{
+          td {
             font-size: 12px;
             color: rgba($gray-color, 1);
           }
         }
+      }
+    }
+  }
+}
+
+// service-section
+
+.service-section {
+  padding: 40px 0;
+  .service-box {
+    margin: 10px 0;
+    a {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba($white-color, 1);
+      font-size: 22px;
+      font-weight: 600;
+      background-color: rgba($blue-color2, 1);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 1px solid rgba($blue-color2, 1);
+      @extend.trans-4;
+      &:hover {
+        transform: scale(1.02);
+        background-color: transparent;
+        color: rgba($blue-color5, 1);
+      }
+    }
+  }
+}
+
+// service-section
+
+// new-section
+
+.new-section {
+  padding: 40px 0;
+
+  .section-content {
+    text-align: center;
+    .section-title {
+      font-size: 18px;
+    }
+  }
+}
+
+// new-section
+
+@media (max-width: 772px) {
+  .service-section {
+    .service-box {
+      a {
+        font-size: 16px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .new-section {
+    padding: 10px 0;
+
+    .section-content {
+      margin: 10px 0 0;
+      .section-title {
+        font-size: 18px;
       }
     }
   }

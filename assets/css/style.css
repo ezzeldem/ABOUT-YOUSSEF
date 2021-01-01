@@ -68,7 +68,7 @@ html[dir="rtl"] body {
 
 .trans-4, .buttom-style, .slider-arrow-box .slider-arrow i, .slider-dutos-style .circle-arrow, .slider-dutos-style .slick-dots li button:before, .chat-head, .buttom-link a, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
 .contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
-.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span, .custom-modle .modal-body .section-content .downlode-link {
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span, .custom-modle .modal-body .section-content .downlode-link, .service-section .service-box a {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -2832,5 +2832,70 @@ html[dir="rtl"] .career-section .left-box {
 .custom-modle .modal-body .section-content .pop-up-table tr td {
   font-size: 12px;
   color: #333232;
+}
+
+.service-section {
+  padding: 40px 0;
+}
+
+.service-section .service-box {
+  margin: 10px 0;
+}
+
+.service-section .service-box a {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  background-color: #00719d;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #00719d;
+}
+
+.service-section .service-box a:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: transparent;
+  color: #00709e;
+}
+
+.new-section {
+  padding: 40px 0;
+}
+
+.new-section .section-content {
+  text-align: center;
+}
+
+.new-section .section-content .section-title {
+  font-size: 18px;
+}
+
+@media (max-width: 772px) {
+  .service-section .service-box a {
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+  }
+  .new-section {
+    padding: 10px 0;
+  }
+  .new-section .section-content {
+    margin: 10px 0 0;
+  }
+  .new-section .section-content .section-title {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
