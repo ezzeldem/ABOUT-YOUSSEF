@@ -2503,7 +2503,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   }
   .product-section .prodact-box .title-box .project-title {
     width: 50%;
-    height: 125px;
+    height: 33%;
     font-size: 12px;
   }
   .product-section .prodact-box .title-box .productInner_Items .menu-item {
@@ -2771,7 +2771,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 
 .custom-modle .modal-body .section-content .pop-up-table tr th {
   font-size: 16px;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: 600;
   margin: 0 0 10px;
 }
