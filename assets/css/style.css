@@ -68,7 +68,7 @@ html[dir="rtl"] body {
 
 .trans-4, .buttom-style, .slider-arrow-box .slider-arrow i, .slider-dutos-style .circle-arrow, .slider-dutos-style .slick-dots li button:before, .chat-head, .buttom-link a, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
 .contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
-.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span {
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span, .custom-modle .modal-body .section-content .downlode-link {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -2729,5 +2729,59 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
     background-size: cover;
     height: 305px;
   }
+}
+
+.custom-modle .modal-title {
+  font-size: 20px;
+  color: #0191c7;
+  font-weight: 600;
+}
+
+.custom-modle .modal-body .img-box {
+  text-align: center;
+}
+
+.custom-modle .modal-body .img-box img {
+  height: 300px;
+}
+
+.custom-modle .modal-body .section-content .section-title {
+  font-size: 18px;
+}
+
+.custom-modle .modal-body .section-content .section-title.downlode-title {
+  margin: 30px 0 10px;
+  color: #034159;
+}
+
+.custom-modle .modal-body .section-content .prag {
+  font-size: 14px;
+}
+
+.custom-modle .modal-body .section-content .downlode-link {
+  margin: 0 40px;
+  font-size: 16px;
+  color: #00719d;
+  font-weight: 600;
+}
+
+.custom-modle .modal-body .section-content .downlode-link:hover {
+  color: #ea3f2e;
+}
+
+.custom-modle .modal-body .section-content .pop-up-table {
+  margin: 50px 0 0;
+}
+
+.custom-modle .modal-body .section-content .pop-up-table tr th {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.custom-modle .modal-body .section-content .pop-up-table tr td {
+  font-size: 12px;
+  color: #333232;
 }
 /*# sourceMappingURL=style.css.map */

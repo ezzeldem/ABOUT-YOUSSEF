@@ -2594,7 +2594,7 @@ input {
 }
 @media (max-width: 772px) {
   .career-section {
-    &::before { 
+    &::before {
       display: none;
     }
     .section-content {
@@ -2621,6 +2621,60 @@ input {
       background-repeat: no-repeat;
       background-size: cover;
       height: 305px;
+    }
+  }
+}
+
+
+.custom-modle{
+  .modal-title{
+    font-size: 20px;
+    color: rgba($blue-color, 1);
+    font-weight: 600;
+  }
+  .modal-body{
+    .img-box{
+      text-align: center;
+      img{
+        height: 300px;
+      }
+    }
+    .section-content{
+      .section-title{
+        font-size: 18px;
+        &.downlode-title{
+          margin:30px 0 10px;
+          color: rgba($blue-color4, 1);
+        }
+      }
+      .prag{
+        font-size: 14px;
+      }
+      .downlode-link{
+        margin: 0 40px;
+        font-size: 16px;
+        color:rgba($blue-color2, 1);
+        font-weight: 600;
+        @extend.trans-4;
+        &:hover{
+          color: rgba($orang-color, 1);
+        }
+      }
+      .pop-up-table{
+        margin: 50px 0 0;
+        tr{
+          th{
+            font-size: 16px;
+            color: rgba($black-color, 1);
+            font-weight: 600;
+            margin: 0 0 10px;
+          }
+          td{
+            font-size: 12px;
+            color: rgba($gray-color, 1);
+          }
+        }
+      }
     }
   }
 }
