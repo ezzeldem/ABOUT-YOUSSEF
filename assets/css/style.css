@@ -2860,6 +2860,7 @@ html[dir="rtl"] .career-section .left-box {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  text-align: center;
   border: 1px solid #00719d;
 }
 

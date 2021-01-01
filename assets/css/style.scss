@@ -2736,6 +2736,7 @@ input {
       width: 200px;
       height: 200px;
       border-radius: 50%;
+      text-align: center;
       border: 1px solid rgba($blue-color2, 1);
       @extend.trans-4;
       &:hover {
