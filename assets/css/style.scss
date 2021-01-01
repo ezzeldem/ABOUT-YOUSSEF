@@ -414,9 +414,15 @@ input {
         background-size: contain;
         background-repeat: no-repeat;
         z-index: -1;
+        html[dir="rtl"] & {
+          transform: rotate(180deg);
+          left:unset;
+          right:-51px;
+        }
       }
       html[dir="rtl"] & {
         margin-right: 58px;
+        margin-left: 0px;
       }
       .lang-box {
         display: flex;
@@ -1410,6 +1416,11 @@ input {
                 background-size: contain;
                 width: 83px;
                 height: 200px;
+                html[dir="rtl"] & {
+                  left: -32px;
+                  right:unset;
+                  transform: rotate(180deg);
+                }
               }
             }
 
@@ -1418,9 +1429,17 @@ input {
               &::after {
                 background-color: rgba($gray-color4, 1);
                 left: -19px;
+                html[dir="rtl"] & {
+                  left:unset;
+                  right: -19px;
+                }
               }
               &::before {
                 right: -1px;
+                html[dir="rtl"] & {
+                  right:unset;
+                  left:1px;
+                }
               }
             }
           }
@@ -1440,6 +1459,11 @@ input {
                 background-size: contain;
                 width: 83px;
                 height: 200px;
+                html[dir="rtl"] & {
+                  right: -32px;
+                  left:unset;
+                  transform: rotate(180deg);
+                }
               }
             }
 
@@ -1447,9 +1471,17 @@ input {
               background-color: rgba($gray-color5, 1);
               &::after {
                 right: -19px;
+                html[dir="rtl"] & {
+                  right: unset;
+                  left: -19px;
+                }
               }
               &::before {
                 left: -1px;
+                html[dir="rtl"] & {
+                  left: unset;
+                right:-1px;
+                }
               }
             }
           }
@@ -2428,9 +2460,15 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    html[dir="rtl"] & {
+      transform: rotate(180deg);
+      right:unset;
+      left:0;
+    }
   }
   .section-content {
     margin: 0 0 22px;
+    
   }
 
   .career-pop-up {
@@ -2454,6 +2492,9 @@ input {
   }
   .left-box {
     padding: 0 0 0 150px;
+    html[dir="rtl"] & {
+      padding: 0 150px 0 0;
+    }
     .form-box {
       .career-select {
         width: 100%;

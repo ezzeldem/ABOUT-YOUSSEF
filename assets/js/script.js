@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+
+        // web lang
+        if ($("html").attr("dir") == "rtl") {
+            var dir_lang = true;
+        } else {
+            var dir_lang = false;
+        }
+
+
     // opne-menu
     $(".nav-bar-section .menu-icon i").click(function () {
         $(".nav-bar-section .nav-ul").addClass("open-menuCLass");
@@ -45,6 +55,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 2000,
+        rtl: dir_lang,
         autoplay: true,
         dots: true,
         arrows: false,
@@ -59,6 +70,7 @@ $(document).ready(function () {
         prevArrow: $("#pmacCourses-slider-left"),
         nextArrow: $("#pmacCourses-slider-right"),
         autoplaySpeed: 2000,
+        rtl: dir_lang,
         autoplay: false,
         dots: false,
         arrows: true,
@@ -85,6 +97,7 @@ $(document).ready(function () {
         prevArrow: $("#gallery-slider-left"),
         nextArrow: $("#gallery-slider-right"),
         autoplaySpeed: 2000,
+        rtl: dir_lang,
         autoplay: false,
         dots: false,
         arrows: true,
@@ -109,6 +122,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplaySpeed: 2000,
+        rtl: dir_lang,
         prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
         nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
         autoplay: true,
@@ -134,6 +148,7 @@ $(document).ready(function () {
         prevArrow: $("#corporate-slider-left"),
         nextArrow: $("#corporate-slider-right"),
         autoplaySpeed: 2000,
+        rtl: dir_lang,
         autoplay: false,
         dots: false,
         arrows: true,
@@ -161,6 +176,7 @@ $(document).ready(function () {
         prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
         nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
         autoplaySpeed: 2000,
+        rtl: dir_lang,
         autoplay: false,
         dots: false,
         arrows: true,
@@ -188,6 +204,7 @@ $(document).ready(function () {
         prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
         nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
         autoplaySpeed: 2000,
+        rtl: dir_lang,
         autoplay: false,
         dots: true,
         arrows: true,
@@ -217,6 +234,7 @@ $(document).ready(function () {
             prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
             nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
             autoplaySpeed: 2000,
+            rtl: dir_lang,
             autoplay: false,
             dots: true,
             arrows: true,
@@ -244,6 +262,7 @@ $(document).ready(function () {
                     prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
                     nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
                     autoplaySpeed: 2000,
+                    rtl: dir_lang,
                     autoplay: false,
                     dots: true,
                     arrows: true,
