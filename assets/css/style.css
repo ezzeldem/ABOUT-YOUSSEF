@@ -357,6 +357,16 @@ input:focus {
   text-align: end;
 }
 
+.section-content .homeScrol-content {
+  overflow-y: scroll;
+  height: 346px;
+  margin: 0 0 16px;
+}
+
+.section-content .homeScrol-content::-webkit-scrollbar {
+  width: 2px;
+}
+
 .buttom-link a {
   border-radius: 2px;
   text-align: center;

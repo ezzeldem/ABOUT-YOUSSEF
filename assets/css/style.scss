@@ -326,6 +326,14 @@ input {
   .buttom-link {
     text-align: end;
   }
+  .homeScrol-content{
+    overflow-y: scroll;
+    height: 346px;
+    margin: 0 0 16px;
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+  }
 }
 
 .buttom-link {
