@@ -324,12 +324,11 @@ $(document).ready(function () {
 
         //   opne careerModal
         $(".career-section .career-pop-up ul li .career-title").click(function () {
-            var career_pop_title = $(this).data("careertitle");
-            var career_pop_content = $(this).data("careerdiscription");
+            var career_pop_title = $(this).data("careertitle"),
+                career_pop_content = $(this).data("careerdiscription");
             $("#careerModal .modal-title").text(career_pop_title);
             $("#careerModal .modal-body .prag").text(career_pop_content);
         });
-
 
     // opne project-box
     $('.product-section .prodact-box .title-box .project-title').click(function(){
