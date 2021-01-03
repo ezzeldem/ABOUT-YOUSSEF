@@ -2805,7 +2805,22 @@ html[dir="rtl"] .career-section .left-box {
 }
 
 .custom-modle .modal-body .img-box img {
-  height: 300px;
+  height: 200px;
+}
+
+.custom-modle .modal-body .section-content strong {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.custom-modle .modal-body .section-content ul {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.custom-modle .modal-body .section-content ul li {
+  padding: 5px 0;
+  font-size: 14px;
 }
 
 .custom-modle .modal-body .section-content .section-title {

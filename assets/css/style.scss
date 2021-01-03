@@ -2682,10 +2682,22 @@ input {
     .img-box {
       text-align: center;
       img {
-        height: 300px;
+        height: 200px;
       }
     }
     .section-content {
+      strong{
+        font-size: 14px !important;
+        font-weight: 500 !important;
+      }
+      ul{
+        list-style: none;
+        padding:0 20px;
+        li{
+          padding: 5px 0;
+          font-size: 14px;
+        }
+      }
       .section-title {
         font-size: 18px;
         &.downlode-title {
