@@ -2363,7 +2363,7 @@ input {
       width: 100%;
       height: 100%;
       top: -26px;
-      left: -26px;
+      left: 0px;
       display: flex !important;
       align-items: flex-start !important;
       .project-title {
@@ -2420,7 +2420,7 @@ input {
               // transform: translate(395px, 37px);
             }
             &:nth-child(4) {
-              left:82%;
+              left: 82%;
               top: 28%;
 
               // transform: translate(450px, 129px);
@@ -2451,7 +2451,7 @@ input {
             }
             &:nth-child(9) {
               left: 28%;
-               top: 91%;
+              top: 91%;
 
               // transform: translate(163px, 468px);
             }
@@ -2515,61 +2515,61 @@ input {
               &:nth-child(1) {
                 left: 30%;
                 top: -14px;
-  
+
                 // transform: translate(185px, -17px);
               }
               &:nth-child(2) {
                 left: 52%;
                 top: -2%;
-  
+
                 // transform: translate(299px, -13px);
               }
               &:nth-child(3) {
                 left: 72%;
                 top: 9%;
-  
+
                 // transform: translate(395px, 37px);
               }
               &:nth-child(4) {
                 left: 76%;
                 top: 32%;
-  
+
                 // transform: translate(450px, 129px);
               }
               &:nth-child(5) {
                 left: 77%;
                 top: 55%;
-  
+
                 // transform: translate(475px, 234px);
               }
               &:nth-child(6) {
                 left: 72%;
                 top: 78%;
-  
+
                 // transform: translate(447px, 337px);
               }
               &:nth-child(7) {
                 left: 52%;
                 top: 91%;
-  
+
                 // transform: translate(380px, 431px);
               }
               &:nth-child(8) {
                 left: 28%;
                 top: 95%;
-  
+
                 // transform: translate(275px, 466px);
               }
               &:nth-child(9) {
                 left: 4%;
                 top: 88%;
-  
+
                 // transform: translate(163px, 468px);
               }
               &:nth-child(10) {
                 left: -5%;
                 top: 66%;
-  
+
                 // transform: translate(58px, 423px);
               }
             }
@@ -2579,6 +2579,104 @@ input {
             height: 70px;
             font-size: 8px;
             border: 2px solid #eeeced;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .product-section {
+    .prodact-box {
+      .title-box {
+        .project-title {
+          width: 130px;
+          height: 130px;
+          font-size: 12px;}
+        .productInner_Items {
+          .menu-item {
+            width: 70px;
+            height: 70px;
+            font-size: 8px;
+            border: 2px solid #eeeced;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .product-section {
+    .prodact-box {
+      .title-box {
+        .productInner_Items {
+          &.active-opne {
+            .menu-item {
+              opacity: 1;
+              z-index: 1;
+              &:nth-child(1) {
+                left: 30%;
+                top: -14px;
+
+                // transform: translate(185px, -17px);
+              }
+              &:nth-child(2) {
+                left: 52%;
+                top: -2%;
+
+                // transform: translate(299px, -13px);
+              }
+              &:nth-child(3) {
+                left: 72%;
+                top: 9%;
+
+                // transform: translate(395px, 37px);
+              }
+              &:nth-child(4) {
+                left: 76%;
+                top: 32%;
+
+                // transform: translate(450px, 129px);
+              }
+              &:nth-child(5) {
+                left: 77%;
+                top: 55%;
+
+                // transform: translate(475px, 234px);
+              }
+              &:nth-child(6) {
+                left: 72%;
+                top: 78%;
+
+                // transform: translate(447px, 337px);
+              }
+              &:nth-child(7) {
+                left: 52%;
+                top: 91%;
+
+                // transform: translate(380px, 431px);
+              }
+              &:nth-child(8) {
+                left: 28%;
+                top: 95%;
+
+                // transform: translate(275px, 466px);
+              }
+              &:nth-child(9) {
+                left: 4%;
+                top: 88%;
+
+                // transform: translate(163px, 468px);
+              }
+              &:nth-child(10) {
+                left: -5%;
+                top: 66%;
+
+                // transform: translate(58px, 423px);
+              }
+            }
           }
         }
       }
