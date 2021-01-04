@@ -2402,39 +2402,70 @@ input {
             opacity: 1;
             z-index: 1;
             &:nth-child(1) {
-              transform: translate(185px, -17px);
+              left: 35%;
+              top: -24px;
+
+              // transform: translate(185px, -17px);
             }
             &:nth-child(2) {
-              transform: translate(299px, -13px);
+              left: 54%;
+              top: -2%;
+
+              // transform: translate(299px, -13px);
             }
             &:nth-child(3) {
-              transform: translate(395px, 37px);
+              left: 72%;
+              top: 9%;
+
+              // transform: translate(395px, 37px);
             }
             &:nth-child(4) {
-              transform: translate(450px, 129px);
+              left:82%;
+              top: 28%;
+
+              // transform: translate(450px, 129px);
             }
             &:nth-child(5) {
-              transform: translate(475px, 234px);
+              left: 88%;
+              top: 49%;
+
+              // transform: translate(475px, 234px);
             }
             &:nth-child(6) {
-              transform: translate(447px, 337px);
+              left: 83%;
+              top: 70%;
+
+              // transform: translate(447px, 337px);
             }
             &:nth-child(7) {
-              transform: translate(380px, 431px);
+              left: 12%;
+              top: 87%;
+
+              // transform: translate(380px, 431px);
             }
             &:nth-child(8) {
-              transform: translate(275px, 466px);
+              left: 31%;
+              top: 95%;
+
+              // transform: translate(275px, 466px);
             }
             &:nth-child(9) {
-              transform: translate(163px, 468px);
+              left: 51%;
+              top: 94%;
+
+              // transform: translate(163px, 468px);
             }
             &:nth-child(10) {
-              transform: translate(58px, 423px);
+              left: 70%;
+              top: 86%;
+
+              // transform: translate(58px, 423px);
             }
           }
         }
         .menu-item {
-          transform: translate(0px, 0px);
+          left: 0;
+          top: 0;
           opacity: 0;
           background: rgba($gray-color3, 1);
           border-radius: 100%;
@@ -2477,43 +2508,9 @@ input {
         }
 
         .productInner_Items {
-          &.active-opne {
-            .menu-item {
-              &:nth-child(1) {
-                transform: translate(120px, -11px);
-              }
-              &:nth-child(2) {
-                transform: translate(199px, -4px);
-              }
-              &:nth-child(3) {
-                transform: translate(263px, 51px);
-              }
-              &:nth-child(4) {
-                transform: translate(278px, 129px);
-              }
-              &:nth-child(5) {
-                transform: translate(273px, 213px);
-              }
-              &:nth-child(6) {
-                transform: translate(247px, 289px);
-              }
-              &:nth-child(7) {
-                transform: translate(167px, 332px);
-              }
-              &:nth-child(8) {
-                transform: translate(84px, 329px);
-              }
-              &:nth-child(9) {
-                transform: translate(9px, 293px);
-              }
-              &:nth-child(10) {
-                transform: translate(-22px, 209px);
-              }
-            }
-          }
           .menu-item {
-            width: 76px;
-            height: 76px;
+            width: 70px;
+            height: 70px;
             font-size: 8px;
             border: 2px solid #eeeced;
           }
