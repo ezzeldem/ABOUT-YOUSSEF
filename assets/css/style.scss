@@ -326,7 +326,7 @@ input {
   .buttom-link {
     text-align: end;
   }
-  .homeScrol-content{
+  .homeScrol-content {
     overflow-y: scroll;
     height: 346px;
     margin: 0 0 16px;
@@ -2355,7 +2355,7 @@ input {
       img {
         border-radius: 50%;
         border: 1px solid rgba($offWhite-color, 1);
-        width: 414px;
+        width: 500px;
       }
     }
     .title-box {
@@ -2371,13 +2371,13 @@ input {
         border: 6px solid #eeeced;
         text-transform: uppercase;
         border-radius: 50%;
-        width: 50%;
+        width: 185px;
         height: 185px;
         line-height: 1.2;
         font-size: 16px;
+        padding: 20px;
         color: $offWhite-color;
         text-align: center;
-        padding: 0 5px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -2390,15 +2390,52 @@ input {
       }
       .productInner_Items {
         @extend.trans-4;
-        opacity: 0;
-        display: flex;
-        flex-wrap: wrap;
+        // opacity: 0;
         width: 100%;
+        position: absolute;
+        height: 100%;
+        top: 0px;
+        left: 0;
+        right: 0;
         &.active-opne {
-          transform: translateY(147px) translateX(-55px);
-          opacity: 1;
+          .menu-item {
+            opacity: 1;
+            z-index: 1;
+            &:nth-child(1) {
+              transform: translate(185px, -17px);
+            }
+            &:nth-child(2) {
+              transform: translate(299px, -13px);
+            }
+            &:nth-child(3) {
+              transform: translate(395px, 37px);
+            }
+            &:nth-child(4) {
+              transform: translate(450px, 129px);
+            }
+            &:nth-child(5) {
+              transform: translate(475px, 234px);
+            }
+            &:nth-child(6) {
+              transform: translate(447px, 337px);
+            }
+            &:nth-child(7) {
+              transform: translate(380px, 431px);
+            }
+            &:nth-child(8) {
+              transform: translate(275px, 466px);
+            }
+            &:nth-child(9) {
+              transform: translate(163px, 468px);
+            }
+            &:nth-child(10) {
+              transform: translate(58px, 423px);
+            }
+          }
         }
         .menu-item {
+          transform: translate(0px, 0px);
+          opacity: 0;
           background: rgba($gray-color3, 1);
           border-radius: 100%;
           border: 8px solid #eeeced;
@@ -2408,13 +2445,15 @@ input {
           color: rgba($white-color, 1);
           font-weight: 500;
           text-align: center;
-          font-size: 12px;
+          font-size: 10px;
           z-index: 10;
           padding: 5px;
           display: flex;
           align-items: center;
           justify-content: center;
-          z-index: 1;
+          z-index: -1;
+          position: absolute;
+
           &:hover {
             background-color: rgba($blue-color, 1);
           }
@@ -2432,16 +2471,50 @@ input {
       .title-box {
         left: 10px;
         .project-title {
-          width: 50%;
+          width: 33%;
           height: 33%;
           font-size: 12px;
         }
 
         .productInner_Items {
+          &.active-opne {
+            .menu-item {
+              &:nth-child(1) {
+                transform: translate(120px, -11px);
+              }
+              &:nth-child(2) {
+                transform: translate(199px, -4px);
+              }
+              &:nth-child(3) {
+                transform: translate(263px, 51px);
+              }
+              &:nth-child(4) {
+                transform: translate(278px, 129px);
+              }
+              &:nth-child(5) {
+                transform: translate(273px, 213px);
+              }
+              &:nth-child(6) {
+                transform: translate(247px, 289px);
+              }
+              &:nth-child(7) {
+                transform: translate(167px, 332px);
+              }
+              &:nth-child(8) {
+                transform: translate(84px, 329px);
+              }
+              &:nth-child(9) {
+                transform: translate(9px, 293px);
+              }
+              &:nth-child(10) {
+                transform: translate(-22px, 209px);
+              }
+            }
+          }
           .menu-item {
             width: 76px;
             height: 76px;
-            font-size: 10px;
+            font-size: 8px;
             border: 2px solid #eeeced;
           }
         }
@@ -2686,14 +2759,14 @@ input {
       }
     }
     .section-content {
-      strong{
+      strong {
         font-size: 14px !important;
         font-weight: 500 !important;
       }
-      ul{
+      ul {
         list-style: none;
-        padding:0 20px;
-        li{
+        padding: 0 20px;
+        li {
           padding: 5px 0;
           font-size: 14px;
         }
