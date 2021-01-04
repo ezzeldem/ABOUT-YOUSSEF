@@ -77,6 +77,18 @@ html[dir="rtl"] body {
   margin: 0 0 20px;
 }
 
+#careerModal .modal-body .prag {
+  font-size: 18px;
+  margin: 10px 0 14px;
+  color: #333232;
+}
+
+#careerModal .modal-body .exp-year {
+  padding: 0 10px;
+  font-size: 14px;
+  color: #888787;
+}
+
 .buttom-style {
   color: white;
   font-size: 10px;

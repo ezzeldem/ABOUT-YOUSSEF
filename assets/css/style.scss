@@ -94,6 +94,21 @@ body {
   }
 }
 
+#careerModal{
+   .modal-body{
+     .prag{
+      font-size: 18px;
+      margin: 10px 0 14px;
+      color: rgba($gray-color, 1);
+     }
+      .exp-year{
+        padding: 0 10px;
+        font-size: 14px;
+        color: rgba($gray-color3, 1);
+      }
+    }
+  }
+
 .buttom-style {
   color: rgba($white-color, 1);
   font-size: 10px;

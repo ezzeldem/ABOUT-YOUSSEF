@@ -325,9 +325,11 @@ $(document).ready(function () {
         //   opne careerModal
         $(".career-section .career-pop-up ul li .career-title").click(function () {
             var career_pop_title = $(this).data("careertitle"),
+                career_pop_exp = $(this).data("careerexp"),
                 career_pop_content = $(this).data("careerdiscription");
             $("#careerModal .modal-title").text(career_pop_title);
             $("#careerModal .modal-body .prag").text(career_pop_content);
+            $("#careerModal .modal-body .exp-year").text(career_pop_exp);
         });
 
     // opne project-box
