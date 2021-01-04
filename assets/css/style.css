@@ -2550,23 +2550,23 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
 }
 
 .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(7) {
-  left: 12%;
-  top: 87%;
+  left: 67%;
+  top: 84%;
 }
 
 .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(8) {
-  left: 31%;
-  top: 95%;
+  left: 48%;
+  top: 92%;
 }
 
 .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(9) {
-  left: 51%;
-  top: 94%;
+  left: 28%;
+  top: 91%;
 }
 
 .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(10) {
-  left: 70%;
-  top: 86%;
+  left: 9%;
+  top: 81%;
 }
 
 .product-section .prodact-box .title-box .productInner_Items .menu-item {
@@ -2609,6 +2609,50 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
     width: 33%;
     height: 33%;
     font-size: 12px;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item {
+    opacity: 1;
+    z-index: 1;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(1) {
+    left: 30%;
+    top: -14px;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(2) {
+    left: 52%;
+    top: -2%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(3) {
+    left: 72%;
+    top: 9%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(4) {
+    left: 76%;
+    top: 32%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(5) {
+    left: 77%;
+    top: 55%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(6) {
+    left: 72%;
+    top: 78%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(7) {
+    left: 52%;
+    top: 91%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(8) {
+    left: 28%;
+    top: 95%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(9) {
+    left: 4%;
+    top: 88%;
+  }
+  .product-section .prodact-box .title-box .productInner_Items.active-opne .menu-item:nth-child(10) {
+    left: -5%;
+    top: 66%;
   }
   .product-section .prodact-box .title-box .productInner_Items .menu-item {
     width: 70px;
