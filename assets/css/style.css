@@ -840,6 +840,11 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   opacity: 1;
 }
 
+.about-section .section-content {
+  height: 400px;
+  overflow-y: scroll;
+}
+
 .about-section.about-section-2:after {
   display: none;
 }
@@ -1343,6 +1348,11 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0 20px;
+}
+
+.chairmanMaessage-section .section-contenttext {
+  overflow-y: scroll;
+  height: 400px;
 }
 
 .chairmanMaessage-section .js-tilt {

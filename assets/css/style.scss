@@ -740,12 +740,25 @@ input {
 
 // about-section
 
+
+
+.about-section {
+  .section-content{
+    height: 400px;
+    overflow-y: scroll;
+  }
+}
+
+
 .about-section {
   &.about-section-2 {
     &:after {
       display: none;
     }
   }
+
+
+
 
   .team-group {
     background-image: url("../img/timeline-Banner.gif");
@@ -1229,6 +1242,12 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0 20px;
+
+
+  .section-contenttext{
+    overflow-y: scroll;
+    height: 400px;
+  }
 
   .js-tilt {
     height: 100%;
