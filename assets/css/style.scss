@@ -47,6 +47,9 @@ body {
   html[dir="rtl"] & {
     font-family: "Tajawal", sans-serif;
   }
+  &::-webkit-scrollbar-track {
+    background: rgba($gray-color, 1);
+  }
 }
 
 * {
@@ -56,12 +59,12 @@ body {
 
   /* Track */
   &::-webkit-scrollbar-track {
-    background: rgba($gray-color, 1);
+    background: rgba($offWhite-color, 1);
   }
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: rgba($blue-color2, 1);
+    background: rgba($blue-color4, 1);
   }
 
   /* Handle on hover */
@@ -326,6 +329,7 @@ input {
     color: rgba($white-color, 1);
     font-size: 14px;
     font-weight: 600;
+    padding: 0 6px 0;
   }
 }
 

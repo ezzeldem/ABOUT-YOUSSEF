@@ -27,6 +27,10 @@ html[dir="rtl"] body {
   font-family: "Tajawal", sans-serif;
 }
 
+body::-webkit-scrollbar-track {
+  background: #333232;
+}
+
 * {
   /* Track */
   /* Handle */
@@ -38,11 +42,11 @@ html[dir="rtl"] body {
 }
 
 *::-webkit-scrollbar-track {
-  background: #333232;
+  background: #eeeded;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #00719d;
+  background: #034159;
 }
 
 *::-webkit-scrollbar-thumb:hover {
@@ -350,6 +354,7 @@ input:focus {
   color: white;
   font-size: 14px;
   font-weight: 600;
+  padding: 0 6px 0;
 }
 
 .section-content {
