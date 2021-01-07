@@ -64,7 +64,7 @@ body {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: rgba($blue-color4, 1);
+    background: rgba($blue-color, 1);
   }
 
   /* Handle on hover */
@@ -76,7 +76,9 @@ body {
   visibility: visible !important;
   opacity: 1 !important;
 }
-
+.no-marg{
+  margin: 0 0 40px !important;
+}
 .overlay-over {
   overflow-y: hidden;
 }
@@ -1250,7 +1252,7 @@ input {
     .c-example__tilt-inner {
       flex-grow: 1;
       img {
-        width: 80%;
+        width:85%;
         border-radius: 50%;
         overflow: hidden;
       }

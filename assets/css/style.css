@@ -46,7 +46,7 @@ body::-webkit-scrollbar-track {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #034159;
+  background: #0191c7;
 }
 
 .pop-up-opner {
@@ -56,6 +56,10 @@ body::-webkit-scrollbar-track {
 .open-poUp-box {
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+.no-marg {
+  margin: 0 0 40px !important;
 }
 
 .overlay-over {
@@ -1364,7 +1368,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 }
 
 .chairmanMaessage-section .js-tilt .c-example__tilt-inner img {
-  width: 80%;
+  width: 85%;
   border-radius: 50%;
   overflow: hidden;
 }
