@@ -27,6 +27,10 @@ html[dir="rtl"] body {
   font-family: "Tajawal", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
 * {
   /* Track */
   /* Handle */
@@ -34,7 +38,7 @@ html[dir="rtl"] body {
 }
 
 *::-webkit-scrollbar {
-  width: 6px;
+  width: 2px;
 }
 
 *::-webkit-scrollbar-track {
@@ -42,11 +46,11 @@ html[dir="rtl"] body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #0191c7;
+  background: #00719d;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background: #00719d;
+  background: #0191c7;
 }
 
 .pop-up-opner {
@@ -367,16 +371,6 @@ input:focus {
 
 .section-content .buttom-link {
   text-align: end;
-}
-
-.section-content .homeScrol-content {
-  overflow-y: scroll;
-  height: 346px;
-  margin: 0 0 16px;
-}
-
-.section-content .homeScrol-content::-webkit-scrollbar {
-  width: 2px;
 }
 
 .buttom-link a {
@@ -841,8 +835,9 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 }
 
 .about-section .section-content {
-  height: 400px;
-  overflow-y: scroll;
+  margin: 40px 0;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .about-section.about-section-2:after {
@@ -1511,6 +1506,10 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pop-up-box.pop-box-1 .pop-box .pop-up-ul li img {
+  height: 80px;
 }
 
 .pop-up-box.pop-box-1 .pop-box .pop-up-ul li .years-box {
@@ -3102,5 +3101,43 @@ html[dir="rtl"] .career-section .left-box {
   .new-section .section-content .section-title {
     font-size: 18px;
   }
+}
+
+.more-bottom {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  border: 1px solid #00719d;
+  font-size: 30px;
+  margin: 50px auto 40px;
+  color: #00719d;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+.more-bottom a i {
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+  color: #00719d;
+}
+
+.more-bottom:hover {
+  color: #ea3f2e;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border: 1px solid #ea3f2e;
+}
+
+.more-bottom:hover a i {
+  color: #ea3f2e;
 }
 /*# sourceMappingURL=style.css.map */

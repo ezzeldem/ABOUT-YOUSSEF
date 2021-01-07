@@ -47,11 +47,14 @@ body {
   html[dir="rtl"] & {
     font-family: "Tajawal", sans-serif;
   }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
 }
 
 * {
   &::-webkit-scrollbar {
-    width: 6px;
+    width: 2px;
   }
 
   /* Track */
@@ -61,12 +64,12 @@ body {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: rgba($blue-color, 1);
+    background: rgba($blue-color2, 1);
   }
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
-    background: rgba($blue-color2, 1);
+    background: rgba($blue-color, 1);
   }
 }
 .pop-up-opner {
@@ -340,14 +343,6 @@ input {
   }
   .buttom-link {
     text-align: end;
-  }
-  .homeScrol-content {
-    overflow-y: scroll;
-    height: 346px;
-    margin: 0 0 16px;
-    &::-webkit-scrollbar {
-      width: 2px;
-    }
   }
 }
 
@@ -744,8 +739,9 @@ input {
 
 .about-section {
   .section-content{
-    height: 400px;
-    overflow-y: scroll;
+    margin: 40px 0;
+    max-height: 400px;
+    overflow-y: auto;
   }
 }
 
@@ -1388,6 +1384,9 @@ input {
           margin: 48px auto;
           position: relative;
           align-items: center;
+          img{
+            height: 80px;
+          }
           .years-box {
             box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.5);
             width: 100px;
@@ -3070,6 +3069,40 @@ input {
       margin: 10px 0 0;
       .section-title {
         font-size: 18px;
+      }
+    }
+  }
+}
+
+
+
+
+
+.more-bottom {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba($blue-color2, 1);
+  font-size: 30px;
+  margin: 50px auto 40px;
+  color: rgba($blue-color2, 1);
+  transition: 0.4s all ease-in-out;
+  a {
+    i {
+      transition: 0.4s all ease-in-out;
+      color: rgba($blue-color2, 1);
+    }
+  }
+  &:hover {
+    color: rgba($orang-color, 1);
+    transform: scale(1.05);
+    border: 1px solid rgba($orang-color, 1);
+    a {
+      i {
+        color: rgba($orang-color, 1);
       }
     }
   }
