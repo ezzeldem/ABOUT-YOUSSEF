@@ -68,9 +68,6 @@ body {
   }
 
   /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background: rgba($blue-color, 1);
-  }
 }
 .pop-up-opner {
   cursor: pointer;

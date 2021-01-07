@@ -49,10 +49,6 @@ body::-webkit-scrollbar-track {
   background: #034159;
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background: #0191c7;
-}
-
 .pop-up-opner {
   cursor: pointer;
 }
