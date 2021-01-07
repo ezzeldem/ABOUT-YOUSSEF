@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
 
-        // web lang
-        if ($("html").attr("dir") == "rtl") {
-            var dir_lang = true;
-        } else {
-            var dir_lang = false;
-        }
+    // web lang
+    if ($("html").attr("dir") == "rtl") {
+        var dir_lang = true;
+    } else {
+        var dir_lang = false;
+    }
 
 
     // opne-menu
@@ -226,62 +226,62 @@ $(document).ready(function () {
 
 
 
-        // event-slider-slider
-        $(".event-slider").slick({
-            infinite: false,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
-            nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
-            autoplaySpeed: 2000,
-            rtl: dir_lang,
-            autoplay: false,
-            dots: true,
-            arrows: true,
-            responsive: [
-                {
-                    breakpoint: 997,
-                    settings: {
-                        slidesToShow: 2,
-                    },
+    // event-slider-slider
+    $(".event-slider").slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
+        nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
+        autoplaySpeed: 2000,
+        rtl: dir_lang,
+        autoplay: false,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 997,
+                settings: {
+                    slidesToShow: 2,
                 },
-                {
-                    breakpoint: 772,
-                    settings: {
-                        slidesToShow: 1,
-                    },
+            },
+            {
+                breakpoint: 772,
+                settings: {
+                    slidesToShow: 1,
                 },
-            ],
-        });
+            },
+        ],
+    });
 
-                // news-slider-slider
-                $(".news-slider").slick({
-                    infinite: false,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
-                    nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
-                    autoplaySpeed: 2000,
-                    rtl: dir_lang,
-                    autoplay: false,
-                    dots: true,
-                    arrows: true,
-                    responsive: [
-                        {
-                            breakpoint: 997,
-                            settings: {
-                                slidesToShow: 2,
-                            },
-                        },
-                        {
-                            breakpoint: 772,
-                            settings: {
-                                slidesToShow: 1,
-                            },
-                        },
-                    ],
-                });
-    
+    // news-slider-slider
+    $(".news-slider").slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: "<div class='circle-arrow devo-right'><i class='fas fa-angle-right'></i></div>",
+        nextArrow: "<div class='circle-arrow devo-left'><i class='fas fa-angle-left'></i></div>",
+        autoplaySpeed: 2000,
+        rtl: dir_lang,
+        autoplay: false,
+        dots: true,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 997,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 772,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    });
+
     // tilt
     $(".js-tilt").tilt({
         maxTilt: 10,
@@ -308,7 +308,15 @@ $(document).ready(function () {
     $(".pop-up-box .closePop-icon i").click(function () {
         $(".pop-up-box").removeClass("open-poUp-box");
         $("body").removeClass("overlay-over");
+    }); 
+    $(document).keyup(function (exit_popUp) {
+        if (exit_popUp.key === "Escape") {
+            $(".pop-up-box").removeClass("open-poUp-box");
+            $("body").removeClass("overlay-over");
+        }
     });
+
+
 
     // open interested-section
     $(".interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span").click(function () {
@@ -322,28 +330,28 @@ $(document).ready(function () {
     });
 
 
-        //   opne careerModal
-        $(".career-section .career-pop-up ul li .career-title").click(function () {
-            var career_pop_title = $(this).data("careertitle"),
-                career_pop_exp = $(this).data("careerexp"),
-                career_pop_content = $(this).data("careerdiscription");
-            $("#careerModal .modal-title").text(career_pop_title);
-            $("#careerModal .modal-body .prag").text(career_pop_content);
-            $("#careerModal .modal-body .exp-year").text(career_pop_exp);
-        });
+    //   opne careerModal
+    $(".career-section .career-pop-up ul li .career-title").click(function () {
+        var career_pop_title = $(this).data("careertitle"),
+            career_pop_exp = $(this).data("careerexp"),
+            career_pop_content = $(this).data("careerdiscription");
+        $("#careerModal .modal-title").text(career_pop_title);
+        $("#careerModal .modal-body .prag").text(career_pop_content);
+        $("#careerModal .modal-body .exp-year").text(career_pop_exp);
+    });
 
     // opne project-box
-    $('.product-section .prodact-box .title-box .project-title').click(function(){
+    $('.product-section .prodact-box .title-box .project-title').click(function () {
         $("#" + $(this).data("projet")).toggleClass("active-opne");
     });
 
 
     // show more contact-box
-    if( $('.contact-show-box').length > 3){
+    if ($('.contact-show-box').length > 3) {
         $('.contact-show-box:gt(3)').hide();
         $('.more-bottom').show();
     }
-    $('.more-bottom').click(function(){
+    $('.more-bottom').click(function () {
         $('.contact-show-box:gt(3)').slideToggle();
         $(this).hide();
     });
