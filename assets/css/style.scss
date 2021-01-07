@@ -1243,6 +1243,7 @@ input {
   .section-contenttext{
     overflow-y: scroll;
     height: 400px;
+    display: block;
   }
 
   .js-tilt {
@@ -1963,8 +1964,14 @@ input {
   .corporate-slider {
     .corporate-slider-item {
       width: calc(100% - 20px) !important;
+      .c-example__tilt-inner{
+        min-height: 425px;
+      }
       .section-content {
         margin: 20px 0;
+        overflow-y: auto;
+        max-height: 400px;
+        padding: 0 10px 0 0;
       }
     }
   }

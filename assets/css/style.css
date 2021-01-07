@@ -1349,6 +1349,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 .chairmanMaessage-section .section-contenttext {
   overflow-y: scroll;
   height: 400px;
+  display: block;
 }
 
 .chairmanMaessage-section .js-tilt {
@@ -2119,8 +2120,15 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
   width: calc(100% - 20px) !important;
 }
 
+.corporate-section .corporate-slider .corporate-slider-item .c-example__tilt-inner {
+  min-height: 425px;
+}
+
 .corporate-section .corporate-slider .corporate-slider-item .section-content {
   margin: 20px 0;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 0 10px 0 0;
 }
 
 .contact-section .contact-box {
