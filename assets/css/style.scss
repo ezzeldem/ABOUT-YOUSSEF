@@ -1699,6 +1699,9 @@ input {
 
     &.pop-box-1 {
       .pop-box {
+        .title-box{
+          margin: 50px 0 0;
+        }
         .pop-up-ul {
           li {
             flex-direction: column;

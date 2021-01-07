@@ -1844,6 +1844,9 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
   .pop-up-box .closePop-icon {
     left: 78%;
   }
+  .pop-up-box.pop-box-1 .pop-box .title-box {
+    margin: 50px 0 0;
+  }
   .pop-up-box.pop-box-1 .pop-box .pop-up-ul li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
