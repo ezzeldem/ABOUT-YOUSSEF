@@ -2127,6 +2127,7 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
   background-color: white;
   padding: 30px;
   margin: 15px 0 40px;
+  min-height: 350px;
 }
 
 .contact-section .contact-box:after {
@@ -3122,9 +3123,10 @@ html[dir="rtl"] .career-section .left-box {
   color: #00719d;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
+  cursor: pointer;
 }
 
-.more-bottom a i {
+.more-bottom i {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
   color: #00719d;
@@ -3137,7 +3139,7 @@ html[dir="rtl"] .career-section .left-box {
   border: 1px solid #ea3f2e;
 }
 
-.more-bottom:hover a i {
+.more-bottom:hover i {
   color: #ea3f2e;
 }
 /*# sourceMappingURL=style.css.map */

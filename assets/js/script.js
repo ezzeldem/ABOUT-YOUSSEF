@@ -338,6 +338,20 @@ $(document).ready(function () {
     });
 
 
+    // show more contact-box
+    if( $('.contact-show-box').length > 3){
+        $('.contact-show-box:gt(3)').hide();
+        $('.more-bottom').show();
+    }
+    $('.more-bottom').click(function(){
+        $('.contact-show-box:gt(3)').slideToggle();
+        $(this).hide();
+    });
+
+
+
+
+
 
     // AOS
     AOS.init();

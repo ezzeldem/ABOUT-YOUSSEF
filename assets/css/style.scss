@@ -1979,6 +1979,7 @@ input {
     background-color: rgba($white-color, 1);
     padding: 30px;
     margin: 15px 0 40px;
+    min-height: 350px;
     &:after {
       box-shadow: 0px 8px 33px 3px rgba($black-color, 0.4);
       content: "";
@@ -3090,20 +3091,19 @@ input {
   margin: 50px auto 40px;
   color: rgba($blue-color2, 1);
   transition: 0.4s all ease-in-out;
-  a {
+  cursor: pointer;
     i {
       transition: 0.4s all ease-in-out;
       color: rgba($blue-color2, 1);
-    }
+    
   }
   &:hover {
     color: rgba($orang-color, 1);
     transform: scale(1.05);
     border: 1px solid rgba($orang-color, 1);
-    a {
       i {
         color: rgba($orang-color, 1);
-      }
+      
     }
   }
 }
