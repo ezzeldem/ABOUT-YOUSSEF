@@ -47,14 +47,11 @@ body {
   html[dir="rtl"] & {
     font-family: "Tajawal", sans-serif;
   }
-  &::-webkit-scrollbar {
-    width: 6px;
-  }
 }
 
 * {
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 6px;
   }
 
   /* Track */
