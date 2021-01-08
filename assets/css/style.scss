@@ -1976,6 +1976,14 @@ input {
         max-height: 400px;
         padding: 0 10px 0 0;
       }
+      ul{
+        li{
+          color: rgba($blue-color2, 1);
+          .prag{
+            color: rgba($blue-color2, 1);
+          }
+        }
+      }
     }
   }
 }
