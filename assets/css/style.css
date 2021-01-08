@@ -1895,6 +1895,19 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
   }
 }
 
+.csr-mian-sction .title-box {
+  overflow: unset;
+  margin: 0px 0 0;
+}
+
+.csr-mian-sction .title-box .section-title {
+  margin: 0 0 20px;
+}
+
+.csr-mian-sction .content-m0 {
+  margin: 20px 0 0;
+}
+
 .interestedPmacCourses .pmacCourses-section {
   background-image: url("../img/PAMC2BG.png");
   background-position: center;
