@@ -2433,6 +2433,52 @@ input {
       }
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+  .corporate-section {
+    .corporate-slider {
+      padding: 0 0 10px;
+        .slider-arrow {
+          top: unset;
+          bottom: 0;
+          transform: unset;
+          z-index: 999;
+          &.left-arrow{
+            left: 35%;
+          }
+          &.right-arrow{
+            right: 35%;
+          }
+        }
+      
+  
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 // product-section

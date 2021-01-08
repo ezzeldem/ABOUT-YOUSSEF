@@ -2538,6 +2538,22 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
   .video-section .video-slider .video-slider-item a .video-box .video-title {
     font-size: 14px;
   }
+  .corporate-section .corporate-slider {
+    padding: 0 0 10px;
+  }
+  .corporate-section .corporate-slider .slider-arrow {
+    top: unset;
+    bottom: 0;
+    -webkit-transform: unset;
+            transform: unset;
+    z-index: 999;
+  }
+  .corporate-section .corporate-slider .slider-arrow.left-arrow {
+    left: 35%;
+  }
+  .corporate-section .corporate-slider .slider-arrow.right-arrow {
+    right: 35%;
+  }
 }
 
 .product-section {
