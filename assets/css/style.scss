@@ -1990,6 +1990,41 @@ input {
         }
       }
     }
+      .slider-arrow {
+        margin: 0 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+        &.left-arrow{
+          left: -55px;
+        }
+        &.right-arrow{
+          right: -55px;
+        }
+        i {
+          justify-content: center;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: rgba($gray-color6, 1);
+          color: rgba($blue-color3, 1);
+          @extend.trans-4;
+          box-shadow: 1px 4px 8px 1px rgba($black-color, 0.4);
+          &.slick-disabled {
+            opacity: 0.2;
+            cursor: unset;
+          }
+          &:hover {
+            background-color: rgba($white-color, 1);
+          }
+        }
+      }
+    
+
   }
 }
 // corporate-section
