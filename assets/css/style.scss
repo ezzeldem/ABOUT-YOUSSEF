@@ -865,6 +865,7 @@ input {
   }
   .prag {
     color: rgba($white-color, 1);
+    width: 70%;
   }
   ul {
     li {
@@ -1968,7 +1969,11 @@ input {
     .corporate-slider-item {
       width: calc(100% - 20px) !important;
       .c-example__tilt-inner{
-        min-height: 425px;
+        text-align: center;
+        img{
+          width: 100%;
+          max-height: 345px;
+        }
       }
       .section-content {
         margin: 20px 0;

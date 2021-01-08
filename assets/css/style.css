@@ -975,6 +975,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 
 .footer-section .prag {
   color: white;
+  width: 70%;
 }
 
 .footer-section ul li {
@@ -2124,7 +2125,12 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
 }
 
 .corporate-section .corporate-slider .corporate-slider-item .c-example__tilt-inner {
-  min-height: 425px;
+  text-align: center;
+}
+
+.corporate-section .corporate-slider .corporate-slider-item .c-example__tilt-inner img {
+  width: 100%;
+  max-height: 345px;
 }
 
 .corporate-section .corporate-slider .corporate-slider-item .section-content {
