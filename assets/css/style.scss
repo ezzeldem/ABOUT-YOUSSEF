@@ -96,6 +96,15 @@ body {
   }
 }
 
+
+.fixed-box{
+  background-color: rgba($black-color, 0.7);
+  box-shadow: 1px 8px 82px 60px rgba($black-color, 0.7);
+  position: fixed;
+  top: 0;
+}
+
+
 #careerModal{
    .modal-body{
      .prag{
@@ -499,7 +508,7 @@ input {
   }
   .nav-ul {
     padding: 30px 30px 10px;
-    .close-icon {
+    .close-icon,.sochile-box {
       display: none;
     }
     ul {
@@ -1046,6 +1055,13 @@ input {
       visibility: hidden;
       opacity: 0;
       transition: 0.4s all ease-in-out;
+      .sochile-box{
+        display: block;
+        ul{
+          display: flex;
+          justify-content: center;
+        }
+      }
       .close-icon {
         position: absolute;
         top: 40px;
@@ -1108,6 +1124,9 @@ input {
   .nav-bar-section {
     box-shadow: 1px 8px 82px 60px rgba($black-color, 0.7);
     .sochile-box {
+      .sochile-ul{
+        display: none;
+      }
       .nav-boxSide {
         margin-left: 29px;
         .open-search-icon {

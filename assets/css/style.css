@@ -81,6 +81,14 @@ body::-webkit-scrollbar-track {
   margin: 0 0 20px;
 }
 
+.fixed-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
+          box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+}
+
 #careerModal .modal-body .prag {
   font-size: 18px;
   margin: 10px 0 14px;
@@ -576,7 +584,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   padding: 30px 30px 10px;
 }
 
-.nav-bar-section .nav-ul .close-icon {
+.nav-bar-section .nav-ul .close-icon, .nav-bar-section .nav-ul .sochile-box {
   display: none;
 }
 
@@ -1194,6 +1202,17 @@ html[dir='rtl'] .about-section .section-content {
     -webkit-transition: 0.4s all ease-in-out;
     transition: 0.4s all ease-in-out;
   }
+  .nav-bar-section .nav-ul .sochile-box {
+    display: block;
+  }
+  .nav-bar-section .nav-ul .sochile-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .nav-bar-section .nav-ul .close-icon {
     position: absolute;
     top: 40px;
@@ -1247,6 +1266,9 @@ html[dir='rtl'] .about-section .section-content {
   .nav-bar-section {
     -webkit-box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
             box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
+  }
+  .nav-bar-section .sochile-box .sochile-ul {
+    display: none;
   }
   .nav-bar-section .sochile-box .nav-boxSide {
     margin-left: 29px;

@@ -43,17 +43,24 @@ $(document).ready(function () {
     });
 
 
+    
+
     // scroleBotton
 
     $(window).scroll(function() {
         if($(window).scrollTop() >= 500) {
             $(".scrol-box").css({"opacity": 1, "visibility": "visible", "bottom": '40px'});
-        }else{
-            $(".scrol-box").css({"opacity": 0, "visibility": "hidden", "bottom": '0px'});
+
+
+            if($(window).width() <= 772){
+                $(".nav-bar-section .menu-icon").addClass('fixed-box');
+            }
         }
-     });
-
-
+        else{
+            $(".scrol-box").css({"opacity": 0, "visibility": "hidden", "bottom": '0px'});
+            $(".nav-bar-section .menu-icon").removeClass('fixed-box');
+        }
+    });
     $(".scrol-box").click(function () {
         $("html, body").animate(
             {
