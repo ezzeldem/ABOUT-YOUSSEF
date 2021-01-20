@@ -414,6 +414,7 @@ input {
     align-items: center;
   }
   .menu-icon {
+    @extend.trans-4;
     display: none;
   }
   .sochile-box {
