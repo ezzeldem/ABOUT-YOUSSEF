@@ -1324,6 +1324,9 @@ html[dir='rtl'] .about-section .section-content {
   .footer-section .footer-title {
     margin: 40px 0 10px;
   }
+  .about-section .team-group .team-img {
+    margin: 0 0 20px;
+  }
 }
 
 .intro-innerPage {
