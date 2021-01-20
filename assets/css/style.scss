@@ -268,6 +268,31 @@ body {
     box-shadow: 4px 4px 10px rgba($gray-color, 0.3);
   }
 }
+.scrol-box {
+  position: fixed;
+  z-index: 9999999;
+  bottom: 0px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  @extend.trans-4;
+  visibility: hidden;
+  justify-content: center;
+  font-size: 20px;
+  background-color: rgba($blue-color4, 1);
+  color: rgba($offWhite-color, 1);
+  @extend.trans-4;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba($gray-color, 0.3);
+  &:hover {
+    bottom: 35px;
+    box-shadow: 4px 4px 10px rgba($gray-color, 0.3);
+  }
+}
 
 .blue-border {
   border: 1px solid rgba($blue-color, 1);
@@ -739,6 +764,9 @@ input {
 
 .about-section {
   .section-content{
+    html[dir='rtl'] & {
+      margin: 70px 0 ;
+    }
     margin: 40px 0;
     max-height: 400px;
     overflow-y: auto;
@@ -1201,6 +1229,21 @@ input {
         &:last-of-type {
           &:after {
             display: none;
+          }
+          html[dir='rtl'] & {
+            &:after {
+              display: block;
+            }
+          }
+        }
+        &:first-of-type {
+          &:after {
+            display: block;
+          }
+          html[dir='rtl'] & {
+            &:after {
+              display: none;
+            }
           }
         }
         &:after {

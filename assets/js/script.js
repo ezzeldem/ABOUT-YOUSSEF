@@ -42,6 +42,27 @@ $(document).ready(function () {
         );
     });
 
+
+    // scroleBotton
+
+    $(window).scroll(function() {
+        if($(window).scrollTop() >= 500) {
+            $(".scrol-box").css({"opacity": 1, "visibility": "visible", "bottom": '40px'});
+        }else{
+            $(".scrol-box").css({"opacity": 0, "visibility": "hidden", "bottom": '0px'});
+        }
+     });
+
+
+    $(".scrol-box").click(function () {
+        $("html, body").animate(
+            {
+                scrollTop: $('.nav-bar-section').offset().top,
+            },
+            900
+        );
+    });
+
     // opne-searchFooter
     $(".footer-section .buttom-link span").click(function () {
         $(".footer-form-box").addClass("active-box");
