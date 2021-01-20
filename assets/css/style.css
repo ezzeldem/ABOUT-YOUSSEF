@@ -83,8 +83,8 @@ body::-webkit-scrollbar-track {
 
 .fixed-box {
   background-color: rgba(0, 0, 0, 0.7);
-  -webkit-box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
-          box-shadow: 1px 8px 82px 60px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: -2px 5px 49px 11px rgba(0, 0, 0, 0.7);
+          box-shadow: -2px 5px 49px 11px rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
 }
