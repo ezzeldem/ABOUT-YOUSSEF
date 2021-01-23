@@ -82,7 +82,7 @@ body::-webkit-scrollbar-track {
 
 .trans-4, .buttom-style, .slider-arrow-box .slider-arrow i, .slider-dutos-style .circle-arrow, .slider-dutos-style .slick-dots li button:before, .chat-head, .scrol-box, .buttom-link a, .nav-bar-section .menu-icon, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
 .contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
-.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .corporate-section .corporate-slider .slider-arrow i, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span, .custom-modle .modal-body .section-content .downlode-link, .service-section .service-box a, .back-button-section .back-buttom {
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .corporate-section .corporate-slider .slider-arrow i, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span, .custom-modle .modal-body .section-content .downlode-link, .service-section .service-box a, .back-button-section .back-buttom, .our-clints .clint-slider .slick-dots li button:before {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -594,7 +594,8 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   padding: 30px 30px 10px;
 }
 
-.nav-bar-section .nav-ul .close-icon, .nav-bar-section .nav-ul .sochile-box {
+.nav-bar-section .nav-ul .close-icon,
+.nav-bar-section .nav-ul .sochile-box {
   display: none;
 }
 
@@ -892,7 +893,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   overflow-y: auto;
 }
 
-html[dir='rtl'] .about-section .section-content {
+html[dir="rtl"] .about-section .section-content {
   margin: 70px 0;
 }
 
@@ -1386,7 +1387,7 @@ html[dir='rtl'] .about-section .section-content {
   display: none;
 }
 
-html[dir='rtl'] .page-ul-section .page-ul ul li:last-of-type:after {
+html[dir="rtl"] .page-ul-section .page-ul ul li:last-of-type:after {
   display: block;
 }
 
@@ -1394,7 +1395,7 @@ html[dir='rtl'] .page-ul-section .page-ul ul li:last-of-type:after {
   display: block;
 }
 
-html[dir='rtl'] .page-ul-section .page-ul ul li:first-of-type:after {
+html[dir="rtl"] .page-ul-section .page-ul ul li:first-of-type:after {
   display: none;
 }
 
@@ -3356,6 +3357,23 @@ html[dir="rtl"] .career-section .left-box {
 
 .our-clints {
   margin: 0 0 20px;
+}
+
+.our-clints .clint-slider {
+  padding: 0 0 30px;
+}
+
+.our-clints .clint-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  background-color: #0191c7;
+}
+
+.our-clints .clint-slider .slick-dots li button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333232;
 }
 
 .our-clints .clint-slider .clint-slider-item {

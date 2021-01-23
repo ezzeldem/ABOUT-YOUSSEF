@@ -99,7 +99,7 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         rtl: dir_lang,
         autoplay: true,
-        dots: false,
+        dots: true,
         arrows: false,
         responsive: [
             {
