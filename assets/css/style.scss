@@ -86,6 +86,17 @@ body {
   padding: 0 0;
 }
 
+.about-row-box{
+  padding: 40px 0 0;
+}
+
+@media(max-width:772px){
+  
+.about-row-box{
+  padding: 20px 0 0;
+}
+}
+
 .trans-4 {
   transition: 0.4s all ease-in-out;
 }
@@ -1226,6 +1237,8 @@ input {
 
 
 }
+
+
 
 // about-page
 
@@ -3320,6 +3333,22 @@ input {
     &:hover{
       color: #e0e0e0;
       background: #00709e;
+    }
+  }
+}
+
+
+// our-clints
+.our-clints{
+  margin: 0 0 20px;
+  .clint-slider{
+    .clint-slider-item{
+      text-align: center;
+      img{
+        margin: 0 auto;
+        object-fit: contain;
+        height: 63px;
+      }
     }
   }
 }

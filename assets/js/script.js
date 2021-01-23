@@ -90,6 +90,39 @@ $(document).ready(function () {
         fade: true,
     });
 
+
+    // clint-slider
+
+    $(".clint-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        rtl: dir_lang,
+        autoplay: true,
+        dots: false,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 772,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ],
+    });
+
     // pmacCourses-slider
     $(".pmacCourses-slider").slick({
         infinite: false,
