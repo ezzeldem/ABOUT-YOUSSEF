@@ -2418,6 +2418,11 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
   height: 45px;
 }
 
+.img-slider-section .img-slider .img-slider-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .img-slider-section .img-slider .img-slider-item .prag {
   color: white;
   text-transform: capitalize;

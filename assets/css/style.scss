@@ -2226,6 +2226,9 @@ input {
         margin: 10px 0;
         height: 45px;
       }
+      img{
+        object-fit: contain;
+      }
       .prag {
         color: rgba($white-color, 1);
         text-transform: capitalize;
