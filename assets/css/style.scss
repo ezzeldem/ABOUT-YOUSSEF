@@ -608,12 +608,9 @@ input {
 // intro-section
 
 .intro-section {
-  margin: -122px 0 0;
+  margin: 0px 0 0;
   z-index: 1;
   border-bottom: 12px solid rgba($blue-color2, 1);
-  &.home-intro-section{
-    margin: 0px 0 0;
-  }
   .intro-slider {
     margin: 0;
     .slick-dots {
@@ -1233,7 +1230,7 @@ input {
 // about-page
 
 .intro-innerPage {
-  margin: -135px 0 0;
+  margin: 0px 0 0;
   z-index: 1;
   .intro-back {
     background-position: center;

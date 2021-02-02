@@ -703,13 +703,9 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 }
 
 .intro-section {
-  margin: -122px 0 0;
+  margin: 0px 0 0;
   z-index: 1;
   border-bottom: 12px solid #00719d;
-}
-
-.intro-section.home-intro-section {
-  margin: 0px 0 0;
 }
 
 .intro-section .intro-slider {
@@ -1345,7 +1341,7 @@ html[dir="rtl"] .about-section .section-content {
 }
 
 .intro-innerPage {
-  margin: -135px 0 0;
+  margin: 0px 0 0;
   z-index: 1;
 }
 
