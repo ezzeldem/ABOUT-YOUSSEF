@@ -78,6 +78,18 @@ $(document).ready(function () {
         $(".footer-form-box").removeClass("active-box");
     });
 
+
+    // video section
+    $('.video-section .video-list .video-box ').click(function(){
+        const video_img_src = $(this).children('.img-box').children('img').attr('src'),
+              video_src = $(this).data('link'),
+              video_title = $(this).children('.disc-box').children('.vedio-title').text();
+        $('.video-section .viode-img-thab .img-box img').attr('src', video_img_src);
+        $('.video-section .viode-img-thab .vedio-title-box .vedio-title').text(video_title);
+        $('.video-section .viode-img-thab .video-thab-link').attr("href", video_src);
+    });
+
+
     // intro-slider
     $(".intro-slider").slick({
         slidesToShow: 1,
@@ -122,6 +134,8 @@ $(document).ready(function () {
             },
         ],
     });
+
+
 
     // pmacCourses-slider
     $(".pmacCourses-slider").slick({

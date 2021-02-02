@@ -82,7 +82,7 @@ body::-webkit-scrollbar-track {
 
 .trans-4, .buttom-style, .slider-arrow-box .slider-arrow i, .slider-dutos-style .circle-arrow, .slider-dutos-style .slick-dots li button:before, .chat-head, .scrol-box, .buttom-link a, .nav-bar-section .menu-icon, .nav-bar-section .sochile-box ul li a, .nav-bar-section .nav-ul ul li a, .nav-bar-section .search-box, .intro-section .intro-slider .slick-dots li button::before, .intro-section .intro-slider .intro-slider-item, .intro-section .intro-slider .intro-slider-item .scrol-icon, .products-section .products-container .products-box, .products-section .products-container .products-box .contentProduct, .contactus-section .contactus-form .buttom-link .submit-button, .contactus-section .contactus-form .form-group .input-style,
 .contactus-section .contactus-form .form-group .select-option, .footer-section ul li a, .footer-section .buttom-link span, .footer-section .footer-form-box, .sochile-footer .socialIcon a, .pop-up-box, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .pmacCourses-title, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .img-popUp .prag, .interestedPmacCourses .pmacCourses-section .pmacCourses-slider .pmacCourses-slider-item .opne-rist-section span, .interestedPmacCourses .interested-section .interested-form .buttom-link .submit-button, .interestedPmacCourses .interested-section .interested-form .form-group .input-style,
-.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .corporate-section .corporate-slider .slider-arrow i, .img-slider-section .img-slider .circle-arrow, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span, .custom-modle .modal-body .section-content .downlode-link, .service-section .service-box a, .back-button-section .back-buttom, .our-clints .clint-slider .slick-dots li button:before {
+.interestedPmacCourses .interested-section .interested-form .form-group .select-option, .corporate-section .corporate-slider .slider-arrow i, .img-slider-section .img-slider .circle-arrow, .video-section .video-list .video-box, .video-section .video-slider .video-slider-item a .video-box span, .product-section .prodact-box .title-box .project-title, .product-section .prodact-box .title-box .productInner_Items, .product-section .prodact-box .title-box .productInner_Items .menu-item, .career-section .career-pop-up ul li .career-title, .career-section .left-box .form-box .input-box .label-file-name, .career-section .left-box .form-box .input-box .send-button, .careerVideo-section .video-box span, .custom-modle .modal-body .section-content .downlode-link, .service-section .service-box a, .back-button-section .back-buttom, .our-clints .clint-slider .slick-dots li button:before {
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -708,6 +708,10 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
   border-bottom: 12px solid #00719d;
 }
 
+.intro-section.home-intro-section {
+  margin: 0px 0 0;
+}
+
 .intro-section .intro-slider {
   margin: 0;
 }
@@ -889,7 +893,7 @@ html[dir="rtl"] .nav-bar-section .sochile-box .nav-boxSide {
 
 .about-section .section-content {
   margin: 40px 0;
-  max-height: 400px;
+  max-height: 377px;
   overflow-y: auto;
 }
 
@@ -2506,6 +2510,108 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
 .video-section {
   background-image: url("../img/Media5BG.jpg");
   padding: 40px 0;
+}
+
+.video-section .video-list {
+  height: 500px;
+  padding: 4px;
+  overflow-y: scroll;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 10px;
+}
+
+.video-section .video-list .video-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+  padding: 4px;
+  border: 1px solid rgba(238, 237, 237, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.video-section .video-list .video-box:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.video-section .video-list .video-box .img-box img {
+  height: 120px;
+  -o-object-fit: content;
+     object-fit: content;
+  min-width: 216px;
+  max-width: 100%;
+}
+
+.video-section .video-list .video-box .disc-box {
+  padding: 2px 10px;
+}
+
+.video-section .video-list .video-box .disc-box .vedio-title {
+  padding: 0 0 6px;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.video-section .video-list .video-box .disc-box .watch-buttom {
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #ea3f2e;
+}
+
+.video-section .viode-img-thab {
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.video-section .viode-img-thab .img-box {
+  position: relative;
+}
+
+.video-section .viode-img-thab .img-box i {
+  position: absolute;
+  border: 1px solid #ea3f2e;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  height: 50px;
+  width: 50px;
+  color: #ea3f2e;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+}
+
+.video-section .viode-img-thab .img-box img {
+  height: 300px;
+  -o-object-fit: content;
+     object-fit: content;
+  width: 100%;
+}
+
+.video-section .viode-img-thab .vedio-title-box {
+  padding: 10px 0;
+}
+
+.video-section .viode-img-thab .vedio-title-box .vedio-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  color: white;
 }
 
 .video-section .video-slider.slider-dutos-style .slick-dots li.slick-active button:before {

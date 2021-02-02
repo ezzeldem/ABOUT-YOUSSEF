@@ -611,6 +611,9 @@ input {
   margin: -122px 0 0;
   z-index: 1;
   border-bottom: 12px solid rgba($blue-color2, 1);
+  &.home-intro-section{
+    margin: 0px 0 0;
+  }
   .intro-slider {
     margin: 0;
     .slick-dots {
@@ -785,7 +788,7 @@ input {
       margin: 70px 0;
     }
     margin: 40px 0;
-    max-height: 400px;
+    max-height: 377px;
     overflow-y: auto;
   }
 }
@@ -2345,6 +2348,92 @@ input {
   @extend.back-img;
   background-image: url("../img/Media5BG.jpg");
   padding: 40px 0;
+
+
+  .video-list{
+    height: 500px;
+    padding: 4px;
+    overflow-y: scroll;
+    border: 1px solid rgba($white-color, .2);
+    margin: 0 0 10px;
+    .video-box{
+      display: flex;
+      margin: 5px 0;
+      padding: 4px;
+      border: 1px solid rgba($offWhite-color, .2);
+      background-color: rgba($white-color, .05);
+      @extend.trans-4;
+      &:hover{
+        background-color: rgba($white-color, .1);
+      }
+      .img-box{
+        img{
+          height: 120px;
+          object-fit: content;
+          min-width: 216px;
+          max-width: 100%;
+        }
+      }
+      .disc-box{
+        padding: 2px 10px;
+        .vedio-title{
+          padding: 0 0 6px;
+          font-size: 15px;
+          font-weight: 500;
+          margin: 0 0 10px 0;
+          color: rgba($white-color, 1);
+        }
+        .watch-buttom{
+          padding: 6px 20px;
+          border-radius: 50px;
+          font-size: 12px;
+          color: rgba($white-color, 1);
+          font-weight: 400;
+          cursor: pointer;
+          background-color: rgba($orang-color, 1);  
+        }
+      }
+    }
+  }
+
+  .viode-img-thab{
+    padding: 5px;
+    border: 1px solid rgba($white-color, .2);
+    .img-box{
+      position: relative;
+      i{
+        position: absolute;
+        border: 1px solid rgba($orang-color, 1);
+        top:50%;
+        left:50%;
+        transform: translateY(-50%) translateX(-50%);
+        height: 50px;
+        width: 50px;
+        color: rgba($orang-color, 1);
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+      }
+      img{
+        height: 300px;
+        object-fit: content;
+        width: 100%;
+      }
+    }
+    .vedio-title-box{
+      padding: 10px 0;
+      .vedio-title{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 10px 0;
+        color: rgba($white-color, 1);
+      }
+    }
+  }
+
+
   .video-slider {
     &.slider-dutos-style {
       .slick-dots {
