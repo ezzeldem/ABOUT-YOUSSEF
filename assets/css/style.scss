@@ -530,7 +530,6 @@ input {
           font-size: 12px;
           color: rgba($white-color, 1);
           font-weight: 700;
-
           @extend.trans-4;
           &:hover {
             color: rgba($blue-color, 1);
@@ -2351,7 +2350,7 @@ input {
 
 
   .video-list{
-    height: 500px;
+    height: 370px;
     padding: 4px;
     overflow-y: scroll;
     border: 1px solid rgba($white-color, .2);
@@ -3411,6 +3410,17 @@ input {
         margin: 0 auto;
         object-fit: contain;
         height: 63px;
+      }
+    }
+  }
+}
+
+
+.logo-back{
+  .about-row-box{
+    .c-example__tilt-inner{
+      img{
+        width: 100%;
       }
     }
   }

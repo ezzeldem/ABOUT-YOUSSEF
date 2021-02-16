@@ -2514,7 +2514,7 @@ html[dir="rtl"] .pop-up-box.pop-box-1 .pop-box .pop-up-ul li:nth-child(even) .po
 }
 
 .video-section .video-list {
-  height: 500px;
+  height: 370px;
   padding: 4px;
   overflow-y: scroll;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -3492,5 +3492,9 @@ html[dir="rtl"] .career-section .left-box {
   -o-object-fit: contain;
      object-fit: contain;
   height: 63px;
+}
+
+.logo-back .about-row-box .c-example__tilt-inner img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
